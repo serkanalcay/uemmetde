@@ -117,14 +117,6 @@ const translations = {
     mapAirportsNote: "Baden-Württemberg ve tüm Almanya havalimanlarına transfer",
     mapAirportsList: "Stuttgart · Frankfurt · Zürich",
 
-    // Assurance / Bottom Banner
-    assuranceSub: "GÜVEN & ŞEFFAFLIK",
-    assuranceTitle: "Cenaze Fonu veya Özel Sigortanız Var mı?",
-    assuranceDesc: "DİTİB Cenaze Fonu, IGMG Cenaze Yardımlaşma Fonu, Türk Federasyonu veya diğer özel cenaze sigortalarıyla tam uyumlu çalışmaktayız. Fon üyelik işlemlerinizin evrak sürecini sizin adınıza doğrudan yürütüyoruz.",
-    stat1Label: "İslami Usul Güvencesi",
-    stat2Label: "Ulaşılabilirlik",
-    assuranceCallBtn: "Danışma Hattı",
-
     // Footer
     footerAbout: "İslami Cenaze Hizmetleri & Uluslararası Nakil. Hayatın en ağır imtihanında sünnete uygun, şefkatli ve vakur refakat.",
     footerOwner: "Müessese Sahibi: Ebru Aydilek",
@@ -260,14 +252,6 @@ const translations = {
     mapDirectionsBtn: "Route planen",
     mapAirportsNote: "Transfer zu allen Flughäfen in Baden-Württemberg & Deutschland",
     mapAirportsList: "Stuttgart · Frankfurt · Zürich",
-
-    // Assurance / Bottom Banner
-    assuranceSub: "VERTRAUEN & TRANSPARENZ",
-    assuranceTitle: "Haben Sie eine Sterbekasse oder Vorsorgeversicherung?",
-    assuranceDesc: "Wir kooperieren mit der DİTİB-Sterbekasse, dem IGMG-Bestattungsvorsorgefonds, Türk Federasyon und allen privaten Sterbegeldversicherungen. Wir regeln die gesamte Kostenabrechnung direkt mit Ihrem Fond.",
-    stat1Label: "Islamische Riten-Garantie",
-    stat2Label: "Erreichbarkeit",
-    assuranceCallBtn: "Beratungshotline",
 
     // Footer
     footerAbout: "Islamische Bestattungen & Überführungen. Würdevolle, sunnakonforme Begleitung in den schwersten Stunden des Lebens.",
