@@ -2,7 +2,7 @@
 <html lang="tr" class="scroll-smooth">
 <head>
   <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport"/>
   <meta content="web_standard" name="shell-type"/>
   <title>Ümmet Cenaze Hizmetleri | uemmet.de - İslami Cenaze Nakli & Bestattungen</title>
   <meta name="description" content="Almanya genelinde İslami usullere tam uygun cenaze nakil ve defin hizmetleri. 7/24 acil çağrı, gasil, kefenleme, resmi makam ve konsolosluk işlemleri, Türkiye'ye hava yolu transferi."/>
@@ -17,11 +17,11 @@
   <style>
     @layer base {
       html, body { margin: 0; padding: 0; }
-      body { overscroll-behavior: none; }
       main > :first-child { margin-top: 0 !important; }
       main > :last-child { margin-bottom: 0 !important; }
     }
-    ::-webkit-scrollbar { display: none; }
+    /* Touch target comfort */
+    button, a { -webkit-tap-highlight-color: transparent; }
   </style>
 
   <!-- Tailwind CSS CDN with exact design palette tokens -->
@@ -121,37 +121,345 @@
           },
           fontSize: {
             "body-sm": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
-            "headline-display-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-display-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
             "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
             "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }],
             "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
             "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
-            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "400" }],
             "headline-lg": ["36px", { "lineHeight": "46px", "fontWeight": "400" }],
             "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
             "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
             "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-            "headline-display": ["48px", { "lineHeight": "58px", "letterSpacing": "-0.01em", "fontWeight": "400" }]
+            "headline-display": ["46px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "400" }]
           }
         }
       }
     };
   </script>
+
+  <!-- INLINE BILINGUAL I18N ENGINE (Guaranteed immediate execution, immune to cache lags) -->
+  <script>
+    const i18nData = {
+      tr: {
+        pageTitle: "Ümmet Cenaze Hizmetleri | uemmet.de - İslami Cenaze Nakli & Bestattungen",
+        logoSubtitle: "İslami Cenaze Hizmetleri",
+        navHome: "Ana Sayfa",
+        navAbout: "Hakkımızda",
+        navServices: "Hizmetlerimiz",
+        navGuide: "Vefat Anında Ne Yapmalı",
+        navReport: "Cenaze Bildirimi",
+        navContact: "İletişim",
+        emergencyHeader: "7/24<br>DE / TR&nbsp;",
+        mobileMenuTitle: "Menü & Dil Seçimi",
+        mobileBarCall: "7/24 Acil Çağrı",
+        heroBadge: "İSLÂMİ CENAZE HİZMETLERİ · ALMANYA GENELİ",
+        heroTitle: "Huzur ve Saygı ile Yanınızdayız",
+        heroDesc: "En zor anlarınızda yükünüzü hafifletmek için buradayız. Almanya genelinden memlekete hava yoluyla nakil ve yerel defin süreçlerini, dinimizin emrettiği şefkat, edep ve sünnet-i seniyyeye tam riayetle titizlikle yönetiyoruz.",
+        heroCallCta: "7/24 Acil Destek Hattı (Hemen Arayın)",
+        heroWhatsappCta: "WhatsApp ile İletişim",
+        heroBadge1: "Resmi Konsolosluk İzinleri",
+        heroBadge2: "365 Gün Kesintisiz Hizmet",
+        heroVerseArabic: "إِنَّا لِلَّٰهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+        heroVerseTranslit: "“İnna lillahi ve inna ileyhi raciun”",
+        heroVerseMeaning: "“Şüphesiz biz Allah’a aitiz ve şüphesiz nihayet O’na döneceğiz.” (Bakara, 156)",
+        heroRegionTag: "Tuttlingen & Baden-Württemberg",
+        heroNationwideTag: "Almanya Geneli Hizmet",
+        heroSupportTitle: "7/24 Kesintisiz Hat",
+        heroStatusActive: "Aktif",
+        pillar1Title: "Dini Vecibelere Tam Bağlılık",
+        pillar1Desc: "Sünnete uygun gasil ve kefenleme işlemleri, ehil ve tecrübeli kadın ve erkek din görevlilerimiz tarafından büyük bir hürmetle ifa edilir.",
+        pillar1Sub: "Sünnet-i Seniyye Esaslı",
+        pillar2Title: "Bürokratik Güvence",
+        pillar2Desc: "Sterbeurkunde, uluslararası Leichenpass, konsolosluk onayları ve belediye izinlerinin tamamı uzman ekibimiz tarafından eksiksiz üstlenilir.",
+        pillar2Sub: "Eksiksiz Belgeleme",
+        pillar3Title: "Şeffaf ve Şefkatli Rehberlik",
+        pillar3Desc: "İlk telefon görüşmesinden memleketteki son defin anına kadar ailenizin manevi ve lojistik yanında duruyor, belirsizlikleri ortadan kaldırıyoruz.",
+        pillar3Sub: "Aileye Özel Destek",
+        servicesSub: "KAPSAMLI HİZMET ANLAYIŞI",
+        servicesTitle: "Hizmetlerimiz / Cenaze İşlemleri",
+        servicesDesc: "Ailenizin kederli gününde her aşamayı sükunet, vakar ve resmi nizam ile organize ediyoruz.",
+        servicesConsultBtn: "Tüm Süreçleri Danışın",
+        service1Badge: "Hava Yolu & Kara Yolu",
+        service1Title: "Cenaze Nakil İşlemleri",
+        service1Desc: "Almanya’nın her noktasından Türkiye’ye veya dünyanın diğer ülkelerine hava yolu ile hızlı ve güvenli nakil. Çinko tabut mühürleme, gümrük muamelesi ve havaalanı teslimat koordinasyonu.",
+        service1Item1: "THY & uluslararası kargo protokolleri",
+        service1Item2: "Havalimanından memleket köyüne nakil",
+        service1Item3: "Almanya içi yerel mezarlığa defin",
+        service2Badge: "Gasilhane & Tekfin",
+        service2Title: "İslami Yıkama & Kefenleme",
+        service2Desc: "Cinsiyete uygun hoca hanımlar ve hoca efendiler nezaretinde İslami usullere tam riayet edilerek yapılan gasil, tekfin ve koku sürme vazifeleri. Ailenin katılım ve helalleşme imkanı.",
+        service2Item1: "Ehliyetli din görevlileri refakati",
+        service2Item2: "Sünnete uygun pamuklu kefenleme",
+        service2Item3: "Cenaze Namazı (Janazah) organizasyonu",
+        service3Badge: "Alman & Konsolosluk Evrakları",
+        service3Title: "Resmi & Bürokratik Süreçler",
+        service3Desc: "Vefat belgesinin (Sterbeurkunde) nüfus dairesinden (Standesamt) temini, uluslararası yol izinleri (Leichenpass), konsolosluk tescili ve sağlık müdürlüğü onaylarının eksiksiz takibi.",
+        service3Item1: "Standesamt ve hastane yazışmaları",
+        service3Item2: "Türkiye Başkonsolosluğu işlemleri",
+        service3Item3: "Cenaze nakil fonu (Cenaze Fonu) irtibatı",
+        roadmapSub: "ACİL REHBER VE YOL HARİTASI",
+        roadmapTitle: "Vefat Anında Ne Yapmalı? İlk 3 Adım",
+        roadmapDesc: "Telaşa kapılmadan, huzur içerisinde atılacak adımlar konusunda ailenizi yönlendiriyoruz.",
+        step1Badge: "İlk İşlem",
+        step1Title: "Doktor Çağrılması",
+        step1Desc: "Vefat evde gerçekleştiyse vakit kaybetmeden ev doktoruna veya nöbetçi doktora (116 117) haber verilir. Hekim muayeneyi yaparak resmi ölüm belgesini („Totenschein“) tanzim eder. Hastane veya bakımevinde ise bu belge kurumca hazırlanır.",
+        step1Tip: "Totenschein belgesini saklayınız.",
+        step2Badge: "7/24 Çağrı",
+        step2Title: "eümmet’e Ulaşılması",
+        step2Desc: "Günün veya gecenin her saatinde <strong>+49 152 35835665</strong> numaralı hattımızı arayarak durumu bildiriniz. Uzman ekibimiz hemen yola çıkarak merhumun uygun şartlarda intikalini ve ilk muhafazayı sağlar.",
+        step2CallBtn: "Hemen Arayın: +49 152 35835665",
+        step3Badge: "Ebedi Uğurlama",
+        step3Title: "Huzurla Uğurlama",
+        step3Desc: "Resmi evrakların tamamlanmasının ardından gasil, kefenleme ve cenaze namazı tertip edilir. Ailenin isteğine göre memlekete uçak nakli veya Almanya’daki İslami mezarlığa defin gerçekleştirilir.",
+        step3Tip: "Cenaze namazı ve defin refakati",
+        quoteText: "“Göz yaşarır, kalp mahzun olur; fakat biz Rabbimizin razı olacağından başka bir söz söylemeyiz.”",
+        quoteSource: "(Hadis-i Şerif)",
+        corpBadge: "Yetkili Cenaze Müessesesi",
+        corpTitle: "eümmet Islamische Bestattungen",
+        corpDesc: "Tuttlingen / Wurmlingen merkezli olarak tüm Baden-Württemberg ve Almanya çapında Müslüman toplumun manevi hassasiyetlerine tam bağlılıkla hizmet sunmaktayız.",
+        leaderRole: "Ansprechpartnerin & Leitung / Müessese Sahibi",
+        leaderName: "Ebru Aydilek",
+        leaderTitle: "Resmi Temsilci & Cenaze Danışmanı",
+        corpAddressLabel: "Adres & Merkez",
+        corpAddressVal: "Hohbühlweg 8<br>78573 Wurmlingen, Deutschland",
+        corpPhoneLabel: "7/24 Kesintisiz Hat",
+        corpCallBtn: "Doğrudan Ara (+49 152 35835665)",
+        corpEmailBtn: "E-Posta Gönder (info@uemmet.de)",
+        mapTitle: "ümmet Bestattungen",
+        mapAddress: "Hohbühlweg 8, 78573 Wurmlingen",
+        mapRegionNote: "Tuttlingen / Villingen-Schwenningen Çevresi",
+        mapDirectionsBtn: "Yol Tarifi Al",
+        mapAirportsNote: "Baden-Württemberg ve tüm Almanya havalimanlarına transfer",
+        mapAirportsList: "Stuttgart · Frankfurt · Zürich",
+        assuranceSub: "GÜVEN & ŞEFFAFLIK",
+        assuranceTitle: "Cenaze Fonu veya Özel Sigortanız Var mı?",
+        assuranceDesc: "DİTİB Cenaze Fonu, IGMG Cenaze Yardımlaşma Fonu, Türk Federasyonu veya diğer özel cenaze sigortalarıyla tam uyumlu çalışmaktayız. Fon üyelik işlemlerinizin evrak sürecini sizin adınıza doğrudan yürütüyoruz.",
+        stat1Label: "İslami Usul Güvencesi",
+        stat2Label: "Ulaşılabilirlik",
+        assuranceCallBtn: "Danışma Hattı",
+        footerAbout: "İslami Cenaze Hizmetleri & Uluslararası Nakil. Hayatın en ağır imtihanında sünnete uygun, şefkatli ve vakur refakat.",
+        footerOwner: "Müessese Sahibi: Ebru Aydilek",
+        footerCoverage: "Baden-Württemberg genelinde ve tüm Almanya'da 7/24 hizmet.",
+        footerColHelp: "Acil Yardım & İletişim",
+        footerColRitual: "Dini Vecibeler",
+        ritualItem1: "Gasil (İslami Usullere Göre Yıkama)",
+        ritualItem2: "Tekfin (Sünnete Uygun Pamuklu Kefenleme)",
+        ritualItem3: "Cenaze Namazı (Janazah) Organizasyonu",
+        ritualItem4: "Memlekete Uluslararası Hava Yolu Nakli",
+        ritualItem5: "İslami Usullere Uygun Yerel Defin",
+        footerColLegal: "Hukuki & Rehber",
+        legalItem1: "Vefat Anında İlk Adımlar (Rehber)",
+        legalItem2: "Hakkımızda",
+        legalItem3: "Cenaze Bildirimi",
+        legalItem4: "Impressum",
+        legalItem5: "Datenschutz",
+        footerCopyright: "© 2025 ümmet Islamische Bestattungen – Ebru Aydilek. Tüm hakları saklıdır."
+      },
+      de: {
+        pageTitle: "ümmet Islamische Bestattungen | uemmet.de - Überführungen & Bestattungsdienst",
+        logoSubtitle: "Islamische Bestattungen",
+        navHome: "Startseite",
+        navAbout: "Über uns",
+        navServices: "Leistungen",
+        navGuide: "Was tun im Trauerfall",
+        navReport: "Todesfall melden",
+        navContact: "Kontakt",
+        emergencyHeader: "24/7<br>DE / TR&nbsp;",
+        mobileMenuTitle: "Menü & Sprachauswahl",
+        mobileBarCall: "24/7 Notruf",
+        heroBadge: "ISLAMISCHE BESTATTUNGEN · BUNDESWEIT",
+        heroTitle: "In Würde und Respekt an Ihrer Seite",
+        heroDesc: "In den schwersten Momenten sind wir da, um Ihre Last zu tragen. Wir organisieren bundesweite Überführungen per Flugzeug in die Heimat sowie lokale Beisetzungen in Deutschland mit vollstem Respekt, Fürsorge und strikter Einhaltung der islamischen Riten (Sunnah).",
+        heroCallCta: "24/7 Notfall-Hotline (Jetzt anrufen)",
+        heroWhatsappCta: "WhatsApp Kontakt",
+        heroBadge1: "Amtliche Konsulatszulassung",
+        heroBadge2: "365 Tage rund um die Uhr",
+        heroVerseArabic: "إِنَّا لِلَّٰهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+        heroVerseTranslit: "„Inna lillahi wa inna ilayhi radschi'un“",
+        heroVerseMeaning: "„Wahrlich, wir gehören Allah, und zu Ihm kehren wir zurück.“ (Al-Baqara, 156)",
+        heroRegionTag: "Tuttlingen & Baden-Württemberg",
+        heroNationwideTag: "Bundesweiter Dienst",
+        heroSupportTitle: "24/7 Notfallbereitschaft",
+        heroStatusActive: "Aktiv",
+        pillar1Title: "Strikte Einhaltung religiöser Pflichten",
+        pillar1Desc: "Rituelle Waschungen (Ghusl) und Einkleidung (Kafan) nach der Sunnah werden von erfahrenen muslimischen Betreuern mit tiefem Respekt vollzogen.",
+        pillar1Sub: "Nach der Sunnah",
+        pillar2Title: "Behördliche Sicherheit",
+        pillar2Desc: "Sterbeurkunden, internationaler Leichenpass, Konsulatsbeglaubigungen und Friedhofsgenehmigungen werden vollständig von uns übernommen.",
+        pillar2Sub: "Vollständige Formalitäten",
+        pillar3Title: "Transparente & einfühlsame Begleitung",
+        pillar3Desc: "Vom ersten Telefonat bis zur Beisetzung stehen wir Ihrer Familie menschlich und logistisch zur Seite und schaffen absolute Klarheit.",
+        pillar3Sub: "Persönliche Betreuung",
+        servicesSub: "UMFASSENDES LEISTUNGSSPEKTRUM",
+        servicesTitle: "Unsere Leistungen / Bestattungsdienste",
+        servicesDesc: "In den schwersten Stunden organisieren wir jeden Schritt mit Ruhe, Würde und behördlicher Ordnung.",
+        servicesConsultBtn: "Kostenlos beraten lassen",
+        service1Badge: "Flug- & Landüberführung",
+        service1Title: "Internationale Überführungen",
+        service1Desc: "Schnelle und sichere Überführung per Flugzeug von jedem Ort in Deutschland in die Türkei oder weltweit. Zinksargversiegelung, Zollformalitäten und Flughafenabwicklung.",
+        service1Item1: "THY & internationale Frachtprotokolle",
+        service1Item2: "Transport vom Flughafen bis zum Heimatdorf",
+        service1Item3: "Lokale Beisetzung auf islamischen Grabfeldern",
+        service2Badge: "Waschung & Einkleidung",
+        service2Title: "Islamische Waschung & Kafan",
+        service2Desc: "Geschlechtergetrennte rituelle Waschung (Ghusl) und Einkleidung (Kafan) unter Aufsicht erfahrener Gelehrter. Möglichkeit für Angehörige zur persönlichen Abschiednahme.",
+        service2Item1: "Begleitung durch geschulte muslimische Fachkräfte",
+        service2Item2: "Sunnakonforme Baumwoll-Einkleidung",
+        service2Item3: "Organisation des Totengebets (Janazah)",
+        service3Badge: "Deutsche & Konsularische Dokumente",
+        service3Title: "Behörden & Amtswege",
+        service3Desc: "Einholen der Sterbeurkunde beim Standesamt, internationaler Leichenpass, konsularische Beglaubigung und Gesundheitsamtsfreigaben ohne Verzögerung.",
+        service3Item1: "Standesamt- und Krankenhausschriftverkehr",
+        service3Item2: "Abwicklung beim Generalkonsulat",
+        service3Item3: "Direktkontakt mit allen Sterbekassen",
+        roadmapSub: "NOTFALL-LEITFADEN & SCHRITT-FÜR-SCHRITT",
+        roadmapTitle: "Was tun im Trauerfall? Die ersten 3 Schritte",
+        roadmapDesc: "Wir begleiten Sie besonnen und verlässlich durch die wichtigsten ersten Schritte.",
+        step1Badge: "Erster Schritt",
+        step1Title: "Arzt verständigen",
+        step1Desc: "Tritt der Todesfall zu Hause ein, rufen Sie den Hausarzt oder den ärztlichen Bereitschaftsdienst (116 117). Der Arzt stellt die Todesbescheinigung („Totenschein“) aus. Im Krankenhaus übernimmt die Klinik diesen Schritt.",
+        step1Tip: "Bitte Totenschein sorgfältig aufbewahren.",
+        step2Badge: "24/7 Notruf",
+        step2Title: "eümmet kontaktieren",
+        step2Desc: "Rufen Sie uns zu jeder Tages- und Nachtzeit unter <strong>+49 152 35835665</strong> an. Unser Team macht sich sofort auf den Weg zur pietätvollen Überführung und fachgerechten Kühlung.",
+        step2CallBtn: "Jetzt anrufen: +49 152 35835665",
+        step3Badge: "Letztes Geleit",
+        step3Title: "Würdevoller Abschied",
+        step3Desc: "Nach Vorliegen der Papiere organisieren wir Waschung, Einkleidung und Totengebet (Janazah). Je nach Wunsch erfolgt die Heimatüberführung per Flugzeug oder die islamische Beisetzung in Deutschland.",
+        step3Tip: "Totengebet & Beisetzungsbegleitung",
+        quoteText: "„Das Auge tränt und das Herz trauert, aber wir sprechen nur das, was unserem Herrn wohlgefällt.“",
+        quoteSource: "(Hadith)",
+        corpBadge: "Zugelassenes Bestattungsunternehmen",
+        corpTitle: "eümmet Islamische Bestattungen",
+        corpDesc: "Mit Sitz in Tuttlingen / Wurmlingen betreuen wir muslimische Familien in ganz Baden-Württemberg und bundesweit mit tiefer Verbundenheit und Pietät.",
+        leaderRole: "Ansprechpartnerin & Leitung / Inhaberin",
+        leaderName: "Ebru Aydilek",
+        leaderTitle: "Offizielle Vertreterin & Bestattungsberaterin",
+        corpAddressLabel: "Adresse & Zentrale",
+        corpAddressVal: "Hohbühlweg 8<br>78573 Wurmlingen, Deutschland",
+        corpPhoneLabel: "24/7 Notruftelefon",
+        corpCallBtn: "Direkt anrufen (+49 152 35835665)",
+        corpEmailBtn: "E-Mail senden (info@uemmet.de)",
+        mapTitle: "ümmet Bestattungen",
+        mapAddress: "Hohbühlweg 8, 78573 Wurmlingen",
+        mapRegionNote: "Kreis Tuttlingen / Villingen-Schwenningen",
+        mapDirectionsBtn: "Route planen",
+        mapAirportsNote: "Transfer zu allen Flughäfen in Baden-Württemberg & Deutschland",
+        mapAirportsList: "Stuttgart · Frankfurt · Zürich",
+        assuranceSub: "VERTRAUEN & TRANSPARENZ",
+        assuranceTitle: "Haben Sie eine Sterbekasse oder Vorsorgeversicherung?",
+        assuranceDesc: "Wir kooperieren mit der DİTİB-Sterbekasse, dem IGMG-Bestattungsvorsorgefonds, Türk Federasyon und allen privaten Sterbegeldversicherungen. Wir regeln die gesamte Kostenabrechnung direkt mit Ihrem Fond.",
+        stat1Label: "Islamische Riten-Garantie",
+        stat2Label: "Erreichbarkeit",
+        assuranceCallBtn: "Beratungshotline",
+        footerAbout: "Islamische Bestattungen & Überführungen. Würdevolle, sunnakonforme Begleitung in den schwersten Stunden des Lebens.",
+        footerOwner: "Inhaberin: Ebru Aydilek",
+        footerCoverage: "Dienstbereit in ganz Baden-Württemberg & bundesweit.",
+        footerColHelp: "Soforthilfe & Kontakt",
+        footerColRitual: "Rituelle Begleitung",
+        ritualItem1: "Ghasl (Islamische Waschung)",
+        ritualItem2: "Kafan (Einkleidung nach Sunna)",
+        ritualItem3: "Janazah (Totengebet Organisation)",
+        ritualItem4: "Internationale Überführung in die Heimat",
+        ritualItem5: "Beisetzung auf islamischen Grabfeldern",
+        footerColLegal: "Rechtliches & Orientierung",
+        legalItem1: "Vefat Anında İlk Adımlar (Leitfaden)",
+        legalItem2: "Über das Bestattungshaus",
+        legalItem3: "Sterbefall vorsorglich melden",
+        legalItem4: "Impressum",
+        legalItem5: "Datenschutz",
+        footerCopyright: "© 2025 ümmet Islamische Bestattungen – Ebru Aydilek. Alle Rechte vorbehalten."
+      }
+    };
+
+    function applyLanguage(lang) {
+      if (!i18nData[lang]) lang = 'tr';
+      document.documentElement.lang = lang;
+      if (i18nData[lang].pageTitle) document.title = i18nData[lang].pageTitle;
+
+      // Update button visual styles: high contrast active state
+      document.querySelectorAll('.lang-btn-de').forEach(btn => {
+        if (lang === 'de') {
+          btn.className = "lang-btn-de px-2.5 py-1 rounded text-xs sm:text-sm font-bold bg-primary text-on-primary shadow-sm transition-all";
+          btn.setAttribute('aria-pressed', 'true');
+        } else {
+          btn.className = "lang-btn-de px-2.5 py-1 rounded text-xs sm:text-sm font-medium text-text-muted hover:text-primary transition-all";
+          btn.setAttribute('aria-pressed', 'false');
+        }
+      });
+
+      document.querySelectorAll('.lang-btn-tr').forEach(btn => {
+        if (lang === 'tr') {
+          btn.className = "lang-btn-tr px-2.5 py-1 rounded text-xs sm:text-sm font-bold bg-primary text-on-primary shadow-sm transition-all";
+          btn.setAttribute('aria-pressed', 'true');
+        } else {
+          btn.className = "lang-btn-tr px-2.5 py-1 rounded text-xs sm:text-sm font-medium text-text-muted hover:text-primary transition-all";
+          btn.setAttribute('aria-pressed', 'false');
+        }
+      });
+
+      // Update all text nodes with data-i18n
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18nData[lang] && i18nData[lang][key] !== undefined) {
+          el.innerHTML = i18nData[lang][key];
+        }
+      });
+
+      try {
+        localStorage.setItem('uemmet_lang', lang);
+      } catch (e) {}
+    }
+
+    // Global switcher
+    window.switchLanguage = function(lang) {
+      applyLanguage(lang);
+    };
+
+    window.toggleMobileNav = function() {
+      const el = document.getElementById('mobileNav');
+      if (el) el.classList.toggle('hidden');
+    };
+
+    window.openModal = function(id) {
+      const el = document.getElementById(id);
+      if (el) { el.classList.remove('hidden'); el.classList.add('flex'); document.body.style.overflow = 'hidden'; }
+    };
+
+    window.closeModal = function(id) {
+      const el = document.getElementById(id);
+      if (el) { el.classList.add('hidden'); el.classList.remove('flex'); document.body.style.overflow = ''; }
+    };
+
+    // Auto-init on script evaluation
+    let savedLang = 'tr';
+    try {
+      const param = new URLSearchParams(window.location.search).get('lang');
+      savedLang = (param === 'de' || param === 'tr') ? param : (localStorage.getItem('uemmet_lang') || 'tr');
+    } catch (e) {}
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => applyLanguage(savedLang));
+    } else {
+      applyLanguage(savedLang);
+    }
+  </script>
 </head>
-<body class="bg-canvas-base text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-white" id="top">
+<body class="bg-canvas-base text-on-surface font-body-md text-body-md antialiased pb-16 md:pb-0" id="top">
 
   <!-- =========================================================================
        FIXED HEADER WITH LOGO, NAV, LANGUAGE SELECTOR & EMERGENCY CALL
        ========================================================================= -->
-  <header class="fixed top-0 w-full z-50 bg-canvas-base/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(32,36,34,0.04)] border-b border-border-quiet/30">
-    <div class="h-20 max-w-[1200px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between">
+  <header class="fixed top-0 w-full z-50 bg-canvas-base/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(32,36,34,0.05)] border-b border-border-quiet/40">
+    <div class="h-16 md:h-20 max-w-[1200px] mx-auto px-3 sm:px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-2">
       
       <!-- Brand Logo -->
-      <a class="flex items-center gap-space-sm group" href="#top" title="Ümmet Cenaze Hizmetleri">
+      <a class="flex items-center gap-2 group shrink-0" href="#top" title="Ümmet Cenaze Hizmetleri">
         <img src="assets/logo.png" 
              onerror="this.src='https://lh3.googleusercontent.com/aida/AEtjO1WbKyvuB0dxS-_Arw2xu9tpOjjwV5oKCGHyEKJYOzNblJerP4h5HmO66eTakjDfLVdns1g5ljxf8E6TYizE6HwPNGsjJbToX_R9DElD7pjZpKqiC0yXDBknCnz5Ku8pFY5HI_HwcJVDcUAGhH0h87GoBwPO96840ZJ5VK9JEuJWmtY3dFHgVCPCgBBT0jJmr3Ma3lj_ALGJdW9VTtaaVtSqqRJ78Jn2YSGQTdSBBEhiWA'" 
              alt="Ümmet Cenaze Nakil Logo" 
-             class="h-12 w-auto object-contain transition-transform group-hover:scale-105">
+             class="h-9 sm:h-11 md:h-12 w-auto object-contain transition-transform group-hover:scale-105">
         <span class="hidden lg:inline text-border-quiet">|</span>
         <span class="hidden lg:inline font-label-sm text-label-sm uppercase tracking-widest text-text-muted" data-i18n="logoSubtitle">
           İslami Cenaze Hizmetleri
@@ -159,85 +467,107 @@
       </a>
 
       <!-- Desktop Navigation Bar -->
-      <nav class="hidden xl:flex items-center gap-space-md" data-active-classes="bg-surface-container text-primary font-label-md rounded">
-        <a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-surface-container text-primary font-label-md rounded whitespace-nowrap" data-path="startseite" href="#top" data-i18n="navHome">
+      <nav class="hidden xl:flex items-center gap-space-md">
+        <a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-surface-container text-primary font-label-md rounded whitespace-nowrap" href="#top" data-i18n="navHome">
           Ana Sayfa
         </a>
-        <a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-subtle rounded transition-colors whitespace-nowrap" data-path="ueber-uns" href="#hakkimizda" data-i18n="navAbout">
+        <a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-subtle rounded transition-colors whitespace-nowrap" href="#hakkimizda" data-i18n="navAbout">
           Hakkımızda
         </a>
-        <a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-subtle rounded transition-colors whitespace-nowrap" data-path="leistungen" href="#hizmetlerimiz" data-i18n="navServices">
+        <a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-subtle rounded transition-colors whitespace-nowrap" href="#hizmetlerimiz" data-i18n="navServices">
           Hizmetlerimiz
         </a>
-        <a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-subtle rounded transition-colors whitespace-nowrap" data-path="vefat-aninda" href="#vefat-aninda" data-i18n="navGuide">
+        <a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-subtle rounded transition-colors whitespace-nowrap" href="#vefat-aninda" data-i18n="navGuide">
           Vefat Anında Ne Yapmalı
         </a>
-        <a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-subtle rounded transition-colors whitespace-nowrap" data-path="cenaze-bildirimi" href="cenaze-bildirimi.html" data-i18n="navReport">
+        <a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-subtle rounded transition-colors whitespace-nowrap" href="cenaze-bildirimi.html" data-i18n="navReport">
           Cenaze Bildirimi
         </a>
-        <a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-subtle rounded transition-colors whitespace-nowrap" data-path="kontakt" href="#iletisim" data-i18n="navContact">
+        <a class="px-space-sm py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-subtle rounded transition-colors whitespace-nowrap" href="#iletisim" data-i18n="navContact">
           İletişim
         </a>
       </nav>
 
       <!-- Right Header Actions: Language Switcher, Emergency Call Button & Mobile Toggle -->
-      <div class="flex items-center gap-space-sm sm:gap-space-md">
+      <div class="flex items-center gap-1.5 sm:gap-2.5 md:gap-space-md">
         
-        <!-- Language Switcher: DE / TR -->
-        <div class="flex items-center bg-surface-subtle p-0.5 rounded text-label-sm font-label-sm text-on-surface-variant border border-border-quiet/40 shadow-xs" role="group" aria-label="Dil Seçimi / Sprachauswahl">
-          <button id="lang-btn-de" class="lang-btn px-2.5 py-1 rounded transition-all text-text-muted hover:text-on-surface font-medium" type="button" data-lang="de" onclick="switchLanguage('de')" aria-pressed="false" title="Auf Deutsch anzeigen">
+        <!-- HIGH-CONTRAST Language Switcher: DE / TR -->
+        <div class="flex items-center bg-surface-subtle p-0.5 rounded-md border border-border-quiet/60 shadow-xs" role="group" aria-label="Dil Seçimi / Sprachauswahl">
+          <button id="lang-btn-de" class="lang-btn-de px-2.5 py-1 rounded text-xs sm:text-sm font-medium text-text-muted hover:text-primary transition-all" type="button" onclick="switchLanguage('de')" aria-pressed="false" title="Auf Deutsch anzeigen">
             DE
           </button>
-          <button id="lang-btn-tr" class="lang-btn px-2.5 py-1 rounded transition-all bg-canvas-base text-primary font-semibold shadow-[0_1px_4px_rgba(0,0,0,0.08)]" type="button" data-lang="tr" onclick="switchLanguage('tr')" aria-pressed="true" title="Türkçe görüntüle">
+          <button id="lang-btn-tr" class="lang-btn-tr px-2.5 py-1 rounded text-xs sm:text-sm font-bold bg-primary text-on-primary shadow-sm transition-all" type="button" onclick="switchLanguage('tr')" aria-pressed="true" title="Türkçe görüntüle">
             TR
           </button>
         </div>
 
-        <!-- 7/24 Direct Emergency Call Button (href="tel:+4915235835665") -->
-        <a class="flex items-center gap-space-xs bg-urgent-support text-on-error px-space-md py-space-sm rounded font-label-md text-label-md tracking-normal hover:bg-[#7e3131] transition-all shadow-sm transform hover:-translate-y-0.5 active:translate-y-0" 
+        <!-- 7/24 Direct Emergency Call Button (Calls +4915235835665) -->
+        <a class="flex items-center gap-1 sm:gap-1.5 bg-urgent-support text-on-error px-2.5 sm:px-space-md py-1.5 sm:py-space-sm rounded font-label-md text-xs sm:text-label-md tracking-normal hover:bg-[#7e3131] transition-all shadow-sm active:scale-95" 
            href="tel:+4915235835665" 
            title="Hemen Arayın: +49 152 35835665">
-          <span class="material-symbols-outlined text-[18px]">call</span>
+          <span class="material-symbols-outlined text-[16px] sm:text-[18px]">call</span>
           <span class="hidden sm:inline font-medium leading-tight text-center" data-i18n="emergencyHeader">7/24<br>DE / TR&nbsp;</span>
-          <span class="sm:hidden font-medium">7/24</span>
+          <span class="sm:hidden font-bold">7/24</span>
         </a>
 
         <!-- Mobile Navigation Hamburger Toggle -->
         <button type="button" 
                 onclick="toggleMobileNav()" 
-                class="xl:hidden p-2 rounded text-primary hover:bg-surface-subtle transition-colors focus:outline-none" 
+                class="xl:hidden p-1.5 sm:p-2 rounded-md text-primary hover:bg-surface-subtle transition-colors focus:outline-none" 
                 aria-label="Menüyü Aç / Menü">
-          <span class="material-symbols-outlined text-[26px]">menu</span>
+          <span class="material-symbols-outlined text-[24px] sm:text-[26px]">menu</span>
         </button>
 
       </div>
     </div>
 
     <!-- Mobile Dropdown Navigation Drawer -->
-    <div id="mobileNav" class="hidden xl:hidden bg-canvas-base/98 border-t border-border-quiet/50 shadow-lg px-margin py-4 transition-all">
+    <div id="mobileNav" class="hidden xl:hidden bg-canvas-base border-t border-border-quiet/60 shadow-2xl px-4 py-4 transition-all">
+      
+      <!-- Mobile Language Switcher Strip -->
+      <div class="mb-4 p-3 bg-surface-subtle rounded-lg flex items-center justify-between border border-border-quiet/50">
+        <span class="text-xs font-semibold text-text-muted" data-i18n="mobileMenuTitle">Menü &amp; Dil Seçimi</span>
+        <div class="flex items-center bg-canvas-base p-0.5 rounded border border-border-quiet/60">
+          <button class="lang-btn-de px-3 py-1 rounded text-xs font-medium text-text-muted" type="button" onclick="switchLanguage('de')">
+            DE
+          </button>
+          <button class="lang-btn-tr px-3 py-1 rounded text-xs font-bold bg-primary text-on-primary" type="button" onclick="switchLanguage('tr')">
+            TR
+          </button>
+        </div>
+      </div>
+
       <nav class="flex flex-col space-y-2">
-        <a class="px-3 py-2 rounded bg-surface-container text-primary font-label-md" href="#top" onclick="toggleMobileNav()" data-i18n="navHome">
-          Ana Sayfa
+        <a class="px-3 py-2.5 rounded-lg bg-surface-container text-primary font-medium text-sm flex items-center justify-between" href="#top" onclick="toggleMobileNav()">
+          <span data-i18n="navHome">Ana Sayfa</span>
+          <span class="material-symbols-outlined text-[18px]">chevron_right</span>
         </a>
-        <a class="px-3 py-2 rounded text-on-surface-variant hover:bg-surface-subtle font-label-md" href="#hakkimizda" onclick="toggleMobileNav()" data-i18n="navAbout">
-          Hakkımızda
+        <a class="px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-subtle font-medium text-sm flex items-center justify-between" href="#hakkimizda" onclick="toggleMobileNav()">
+          <span data-i18n="navAbout">Hakkımızda</span>
+          <span class="material-symbols-outlined text-[18px]">chevron_right</span>
         </a>
-        <a class="px-3 py-2 rounded text-on-surface-variant hover:bg-surface-subtle font-label-md" href="#hizmetlerimiz" onclick="toggleMobileNav()" data-i18n="navServices">
-          Hizmetlerimiz
+        <a class="px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-subtle font-medium text-sm flex items-center justify-between" href="#hizmetlerimiz" onclick="toggleMobileNav()">
+          <span data-i18n="navServices">Hizmetlerimiz</span>
+          <span class="material-symbols-outlined text-[18px]">chevron_right</span>
         </a>
-        <a class="px-3 py-2 rounded text-on-surface-variant hover:bg-surface-subtle font-label-md" href="#vefat-aninda" onclick="toggleMobileNav()" data-i18n="navGuide">
-          Vefat Anında Ne Yapmalı
+        <a class="px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-subtle font-medium text-sm flex items-center justify-between" href="#vefat-aninda" onclick="toggleMobileNav()">
+          <span data-i18n="navGuide">Vefat Anında Ne Yapmalı</span>
+          <span class="material-symbols-outlined text-[18px]">chevron_right</span>
         </a>
-        <a class="px-3 py-2 rounded text-on-surface-variant hover:bg-surface-subtle font-label-md" href="cenaze-bildirimi.html" data-i18n="navReport">
-          Cenaze Bildirimi
+        <a class="px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-subtle font-medium text-sm flex items-center justify-between" href="cenaze-bildirimi.html">
+          <span data-i18n="navReport">Cenaze Bildirimi</span>
+          <span class="material-symbols-outlined text-[18px]">chevron_right</span>
         </a>
-        <a class="px-3 py-2 rounded text-on-surface-variant hover:bg-surface-subtle font-label-md" href="#iletisim" onclick="toggleMobileNav()" data-i18n="navContact">
-          İletişim
+        <a class="px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-subtle font-medium text-sm flex items-center justify-between" href="#iletisim" onclick="toggleMobileNav()">
+          <span data-i18n="navContact">İletişim</span>
+          <span class="material-symbols-outlined text-[18px]">chevron_right</span>
         </a>
-        <div class="pt-2 border-t border-border-quiet/40 flex items-center justify-between">
-          <span class="text-xs text-text-muted">7/24 Notruf: +49 152 35835665</span>
-          <a class="px-3 py-1.5 rounded bg-urgent-support text-on-error text-xs font-semibold" href="tel:+4915235835665">
-            Hemen Ara
+
+        <!-- Drawer Emergency Direct Call Button -->
+        <div class="pt-3 border-t border-border-quiet/50">
+          <a class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-urgent-support text-on-error font-semibold text-sm shadow-md" href="tel:+4915235835665">
+            <span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+            <span>+49 152 35835665 (Hemen Ara)</span>
           </a>
         </div>
       </nav>
@@ -247,44 +577,44 @@
   <!-- =========================================================================
        MAIN CONTENT CONTAINER
        ========================================================================= -->
-  <main class="w-full pt-20 bg-canvas-base">
+  <main class="w-full pt-16 md:pt-20 bg-canvas-base">
     <div class="flex flex-col w-full">
 
       <!-- =====================================================================
            HERO SECTION: Split Layout with High Dignity & Soft Warmth
            ===================================================================== -->
-      <section class="relative w-full overflow-hidden bg-canvas-base py-space-xl lg:py-space-2xl">
+      <section class="relative w-full overflow-hidden bg-canvas-base py-6 sm:py-8 md:py-space-xl lg:py-space-2xl">
         <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-surface-container opacity-60 blur-3xl pointer-events-none"></div>
         <div class="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full bg-primary-fixed/20 opacity-40 blur-3xl pointer-events-none"></div>
 
-        <div class="max-w-[1200px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop relative">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:gap-space-2xl items-center">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-margin md:px-margin-tablet lg:px-margin-desktop relative">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-space-2xl items-center">
             
             <!-- Left Column: Primary Narrative & Immediate Action -->
-            <div class="lg:col-span-7 flex flex-col items-start space-y-space-md">
+            <div class="lg:col-span-7 flex flex-col items-start space-y-3 sm:space-y-4 md:space-y-space-md">
               
               <!-- Category Pill -->
-              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-primary shadow-xs">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-primary shadow-xs">
                 <span class="w-2 h-2 rounded-full bg-urgent-support animate-pulse"></span>
-                <span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold" data-i18n="heroBadge">
+                <span class="font-label-sm text-[11px] sm:text-label-sm uppercase tracking-wider font-semibold" data-i18n="heroBadge">
                   İSLÂMİ CENAZE HİZMETLERİ · ALMANYA GENELİ
                 </span>
               </div>
 
-              <!-- Main Headline -->
-              <h1 class="font-headline-display text-headline-display text-primary leading-tight font-normal" data-i18n="heroTitle">
+              <!-- Main Headline (Responsive text size) -->
+              <h1 class="font-headline-display text-2xl sm:text-3xl md:text-4xl lg:text-headline-display text-primary leading-tight font-normal" data-i18n="heroTitle">
                 Huzur ve Saygı ile Yanınızdayız
               </h1>
 
               <!-- Compassionate Narrative Description -->
-              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed" data-i18n="heroDesc">
+              <p class="font-body-md text-sm sm:text-base lg:text-body-lg text-on-surface-variant max-w-xl leading-relaxed" data-i18n="heroDesc">
                 En zor anlarınızda yükünüzü hafifletmek için buradayız. Almanya genelinden memlekete hava yoluyla nakil ve yerel defin süreçlerini, dinimizin emrettiği şefkat, edep ve sünnet-i seniyyeye tam riayetle titizlikle yönetiyoruz.
               </p>
 
-              <!-- Immediate CTAs for Grieving Families -->
-              <div class="pt-space-xs flex flex-wrap items-center gap-space-sm w-full sm:w-auto">
+              <!-- Immediate CTAs: Stack full width on mobile, inline on sm+ -->
+              <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
                 <!-- 7/24 Call Button: Automatically calls +4915235835665 -->
-                <a class="flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-lg bg-urgent-support text-on-error font-label-lg text-label-lg shadow-md hover:bg-[#7d2f2f] transition-all transform hover:-translate-y-0.5 active:translate-y-0" 
+                <a class="flex items-center justify-center gap-2 px-5 py-3.5 rounded-lg bg-urgent-support text-on-error font-semibold text-sm sm:text-base shadow-md hover:bg-[#7d2f2f] transition-all active:scale-95 text-center" 
                    href="tel:+4915235835665" 
                    title="Hemen Arayın">
                   <span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
@@ -292,7 +622,7 @@
                 </a>
 
                 <!-- WhatsApp Direct Link -->
-                <a class="flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-lg bg-surface-subtle text-primary font-label-lg text-label-lg hover:bg-surface-container transition-all border border-border-quiet/50 shadow-xs" 
+                <a class="flex items-center justify-center gap-2 px-5 py-3.5 rounded-lg bg-surface-subtle text-primary font-semibold text-sm sm:text-base hover:bg-surface-container transition-all border border-border-quiet/60 shadow-xs active:scale-95 text-center" 
                    href="https://wa.me/4915235835665" 
                    rel="noopener noreferrer" 
                    target="_blank"
@@ -303,7 +633,7 @@
               </div>
 
               <!-- Micro-Trust Badges -->
-              <div class="pt-space-sm flex flex-wrap items-center gap-space-md text-text-muted font-body-sm text-body-sm">
+              <div class="pt-2 flex flex-wrap items-center gap-4 text-text-muted text-xs sm:text-body-sm">
                 <div class="flex items-center gap-1.5">
                   <span class="material-symbols-outlined text-[18px] text-primary">verified</span>
                   <span data-i18n="heroBadge1">Resmi Konsolosluk İzinleri</span>
@@ -317,55 +647,55 @@
             </div>
 
             <!-- Right Column: Visual Sanctuary & Quranic Comfort Card -->
-            <div class="lg:col-span-5 relative w-full">
-              <div class="relative bg-surface-subtle rounded-xl p-space-lg lg:p-space-xl shadow-sm flex flex-col space-y-space-md overflow-hidden border border-border-quiet/40">
+            <div class="lg:col-span-5 relative w-full mt-4 lg:mt-0">
+              <div class="relative bg-surface-subtle rounded-xl p-4 sm:p-6 lg:p-space-xl shadow-sm flex flex-col space-y-4 overflow-hidden border border-border-quiet/50">
                 
                 <!-- Soft Quranic Verse Callout -->
-                <div class="relative z-10 flex flex-col items-center text-center py-space-sm px-space-xs">
-                  <span class="font-headline-sm text-headline-sm text-primary/70 tracking-widest mb-2 font-normal font-serif">
+                <div class="relative z-10 flex flex-col items-center text-center py-2 px-1">
+                  <span class="text-base sm:text-headline-sm text-primary/70 tracking-widest mb-1.5 font-normal font-serif">
                     إِنَّا لِلَّٰهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ
                   </span>
-                  <p class="font-headline-md text-headline-md text-primary font-medium italic" data-i18n="heroVerseTranslit">
+                  <p class="text-lg sm:text-headline-md text-primary font-medium italic" data-i18n="heroVerseTranslit">
                     “İnna lillahi ve inna ileyhi raciun”
                   </p>
-                  <p class="font-body-sm text-body-sm text-text-muted mt-2 max-w-xs" data-i18n="heroVerseMeaning">
+                  <p class="text-xs sm:text-body-sm text-text-muted mt-1.5 max-w-xs leading-relaxed" data-i18n="heroVerseMeaning">
                     “Şüphesiz biz Allah’a aitiz ve şüphesiz nihayet O’na döneceğiz.” (Bakara, 156)
                   </p>
                 </div>
 
                 <!-- Atmosphere Image of Serenity -->
-                <div class="relative w-full h-56 rounded-lg overflow-hidden shadow-sm">
+                <div class="relative w-full h-48 sm:h-56 rounded-lg overflow-hidden shadow-sm">
                   <img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" 
                        data-alt="Dignified serene morning sunlight filtering through olive tree branches and stone sanctuary" 
                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy043GO_eFAOB7fWGxnG7qtCR2TbDHKQ7CEemMtAgkmFASqv2QFRzPEHH7E9p2Ur3LH1ZrgAohvYyhgywsY_6SilonW4_IetzOAbVBTW702HSAHAW7zxdF0iymdyEGF-GFwHYe8gPnHhjQpASgfUinM37rV7iXbqRK9PxewsiIw5N33jfsXxpBtbvAMJoLl6U_dlye3_QrwgnI4B2UCBEF7Bt81a9U40oGXxg4un_QEsPHGhAjcHNEzX1UbOpheuBy_a2zkTEpIqxGYtY"
                        alt="Ümmet Cenaze Hizmetleri">
-                  <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
-                  <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-surface-container-lowest">
-                    <span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold" data-i18n="heroRegionTag">
+                  <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+                  <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-surface-container-lowest text-xs sm:text-sm">
+                    <span class="font-semibold" data-i18n="heroRegionTag">
                       Tuttlingen &amp; Baden-Württemberg
                     </span>
-                    <span class="font-body-sm text-body-sm text-surface-container-low" data-i18n="heroNationwideTag">
+                    <span class="text-surface-container-low" data-i18n="heroNationwideTag">
                       Almanya Geneli Hizmet
                     </span>
                   </div>
                 </div>
 
                 <!-- Quick Access Direct Support Pill: Calls +4915235835665 -->
-                <div class="bg-surface-container rounded-lg p-space-sm flex items-center justify-between shadow-xs">
-                  <div class="flex items-center gap-space-xs">
-                    <div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary">
+                <div class="bg-surface-container rounded-lg p-3 flex items-center justify-between shadow-xs">
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0">
                       <span class="material-symbols-outlined text-[18px]">support_agent</span>
                     </div>
                     <div>
-                      <span class="block font-label-sm text-label-sm uppercase tracking-wide text-text-muted" data-i18n="heroSupportTitle">
+                      <span class="block text-[11px] uppercase tracking-wide text-text-muted" data-i18n="heroSupportTitle">
                         7/24 Kesintisiz Hat
                       </span>
-                      <a class="font-headline-sm text-headline-sm text-primary font-bold hover:underline" href="tel:+4915235835665">
+                      <a class="text-base sm:text-headline-sm text-primary font-bold hover:underline" href="tel:+4915235835665">
                         +49 152 35835665
                       </a>
                     </div>
                   </div>
-                  <span class="inline-flex items-center px-2.5 py-1 rounded bg-surface-container-lowest text-primary text-label-sm font-label-sm font-semibold shadow-xs" data-i18n="heroStatusActive">
+                  <span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container-lowest text-primary text-xs font-semibold shadow-xs" data-i18n="heroStatusActive">
                     Aktif
                   </span>
                 </div>
@@ -380,54 +710,54 @@
       <!-- =====================================================================
            CORE VALUES & TRUST BANNER: 3 Dignified Pillars
            ===================================================================== -->
-      <section class="w-full bg-surface-subtle py-space-xl border-y border-border-quiet/40">
-        <div class="max-w-[1200px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+      <section class="w-full bg-surface-subtle py-8 sm:py-space-xl border-y border-border-quiet/40">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-margin md:px-margin-tablet lg:px-margin-desktop">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-space-lg">
             
             <!-- Pillar 1 -->
-            <div class="bg-canvas-base rounded-xl p-space-lg shadow-sm flex flex-col space-y-space-xs transition-transform duration-200 hover:-translate-y-1 border border-border-quiet/30">
-              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-xs">
-                <span class="material-symbols-outlined text-[26px]">water_drop</span>
+            <div class="bg-canvas-base rounded-xl p-5 sm:p-space-lg shadow-sm flex flex-col space-y-2 border border-border-quiet/40">
+              <div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-1">
+                <span class="material-symbols-outlined text-[24px]">water_drop</span>
               </div>
-              <h3 class="font-headline-sm text-headline-sm text-primary" data-i18n="pillar1Title">
+              <h3 class="font-headline-sm text-lg sm:text-headline-sm text-primary" data-i18n="pillar1Title">
                 Dini Vecibelere Tam Bağlılık
               </h3>
-              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" data-i18n="pillar1Desc">
+              <p class="text-sm sm:text-body-md text-on-surface-variant leading-relaxed" data-i18n="pillar1Desc">
                 Sünnete uygun gasil ve kefenleme işlemleri, ehil ve tecrübeli kadın ve erkek din görevlilerimiz tarafından büyük bir hürmetle ifa edilir.
               </p>
-              <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider pt-2" data-i18n="pillar1Sub">
+              <span class="text-xs text-secondary font-semibold uppercase tracking-wider pt-1" data-i18n="pillar1Sub">
                 Sünnet-i Seniyye Esaslı
               </span>
             </div>
 
             <!-- Pillar 2 -->
-            <div class="bg-canvas-base rounded-xl p-space-lg shadow-sm flex flex-col space-y-space-xs transition-transform duration-200 hover:-translate-y-1 border border-border-quiet/30">
-              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-xs">
-                <span class="material-symbols-outlined text-[26px]">assignment_turned_in</span>
+            <div class="bg-canvas-base rounded-xl p-5 sm:p-space-lg shadow-sm flex flex-col space-y-2 border border-border-quiet/40">
+              <div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-1">
+                <span class="material-symbols-outlined text-[24px]">assignment_turned_in</span>
               </div>
-              <h3 class="font-headline-sm text-headline-sm text-primary" data-i18n="pillar2Title">
+              <h3 class="font-headline-sm text-lg sm:text-headline-sm text-primary" data-i18n="pillar2Title">
                 Bürokratik Güvence
               </h3>
-              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" data-i18n="pillar2Desc">
+              <p class="text-sm sm:text-body-md text-on-surface-variant leading-relaxed" data-i18n="pillar2Desc">
                 Sterbeurkunde, uluslararası Leichenpass, konsolosluk onayları ve belediye izinlerinin tamamı uzman ekibimiz tarafından eksiksiz üstlenilir.
               </p>
-              <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider pt-2" data-i18n="pillar2Sub">
+              <span class="text-xs text-secondary font-semibold uppercase tracking-wider pt-1" data-i18n="pillar2Sub">
                 Eksiksiz Belgeleme
               </span>
             </div>
 
             <!-- Pillar 3 -->
-            <div class="bg-canvas-base rounded-xl p-space-lg shadow-sm flex flex-col space-y-space-xs transition-transform duration-200 hover:-translate-y-1 border border-border-quiet/30">
-              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-xs">
-                <span class="material-symbols-outlined text-[26px]">volunteer_activism</span>
+            <div class="bg-canvas-base rounded-xl p-5 sm:p-space-lg shadow-sm flex flex-col space-y-2 border border-border-quiet/40">
+              <div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-1">
+                <span class="material-symbols-outlined text-[24px]">volunteer_activism</span>
               </div>
-              <h3 class="font-headline-sm text-headline-sm text-primary" data-i18n="pillar3Title">
+              <h3 class="font-headline-sm text-lg sm:text-headline-sm text-primary" data-i18n="pillar3Title">
                 Şeffaf ve Şefkatli Rehberlik
               </h3>
-              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" data-i18n="pillar3Desc">
+              <p class="text-sm sm:text-body-md text-on-surface-variant leading-relaxed" data-i18n="pillar3Desc">
                 İlk telefon görüşmesinden memleketteki son defin anına kadar ailenizin manevi ve lojistik yanında duruyor, belirsizlikleri ortadan kaldırıyoruz.
               </p>
-              <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider pt-2" data-i18n="pillar3Sub">
+              <span class="text-xs text-secondary font-semibold uppercase tracking-wider pt-1" data-i18n="pillar3Sub">
                 Aileye Özel Destek
               </span>
             </div>
@@ -437,25 +767,25 @@
       </section>
 
       <!-- =====================================================================
-           HİZMETLERİMİZ (OUR SERVICES - 3 Desktop Columns)
+           HİZMETLERİMİZ (OUR SERVICES - 3 Columns)
            ===================================================================== -->
-      <section id="hizmetlerimiz" class="w-full bg-canvas-base py-space-2xl">
-        <div class="max-w-[1200px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+      <section id="hizmetlerimiz" class="w-full bg-canvas-base py-10 sm:py-space-2xl">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-margin md:px-margin-tablet lg:px-margin-desktop">
           
           <!-- Section Heading Bar -->
-          <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
-            <div class="space-y-space-xs max-w-xl">
-              <span class="font-label-sm text-label-sm uppercase tracking-widest text-text-muted font-semibold" data-i18n="servicesSub">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-space-xl gap-3">
+            <div class="space-y-1.5 max-w-xl">
+              <span class="text-xs uppercase tracking-widest text-text-muted font-semibold" data-i18n="servicesSub">
                 KAPSAMLI HİZMET ANLAYIŞI
               </span>
-              <h2 class="font-headline-lg text-headline-lg text-primary" data-i18n="servicesTitle">
+              <h2 class="font-headline-lg text-2xl sm:text-3xl lg:text-headline-lg text-primary" data-i18n="servicesTitle">
                 Hizmetlerimiz / Cenaze İşlemleri
               </h2>
-              <p class="font-body-md text-body-md text-on-surface-variant" data-i18n="servicesDesc">
+              <p class="text-sm sm:text-body-md text-on-surface-variant" data-i18n="servicesDesc">
                 Ailenizin kederli gününde her aşamayı sükunet, vakar ve resmi nizam ile organize ediyoruz.
               </p>
             </div>
-            <a class="inline-flex items-center gap-1.5 text-primary font-label-md text-label-md font-semibold hover:underline" 
+            <a class="inline-flex items-center gap-1.5 text-primary text-sm font-semibold hover:underline" 
                href="tel:+4915235835665" 
                title="Bizi Arayarak Bilgi Alın">
               <span data-i18n="servicesConsultBtn">Tüm Süreçleri Danışın</span>
@@ -464,39 +794,38 @@
           </div>
 
           <!-- Services Grid (3 Columns) -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-space-lg">
             
             <!-- Service 1: Cenaze Nakil İşlemleri -->
             <div class="bg-surface-subtle rounded-xl overflow-hidden shadow-sm flex flex-col group border border-border-quiet/40">
-              <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+              <div class="relative h-44 sm:h-48 w-full overflow-hidden bg-surface-container">
                 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                     data-alt="Dignified international air transport and logistics vehicle for funeral transfer" 
                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBojYiVEoBai4SWT0jG0pglKJQ6Cup8e0LELcaCpYg1qCp2U5-eq-XP-EMcDY5Rlk2vtMTzaByMMT0f4eneQE5D5WVjExs9K9PMb8qEr-k_Aqz5reWsEz_kzgimxutcFrhLMde_UXpy7u-OaA-rZP-r9vwmE8uFXQFBWEW9wCuHC1CI2-DouwOWUpqNm00EJL1AzSpeEeoPfXRQqz1Fs5GT9UC10qW6Y9y8SVNyYyTpT5qil11lsDST6jFD0rPttOiuJPW5NxShv5_8i4U"
                      alt="Cenaze Nakil İşlemleri">
-                <div class="absolute top-3 left-3 bg-canvas-base/90 backdrop-blur px-2.5 py-1 rounded text-primary font-label-sm text-label-sm font-semibold shadow-xs" data-i18n="service1Badge">
+                <div class="absolute top-2.5 left-2.5 bg-canvas-base/90 backdrop-blur px-2.5 py-1 rounded text-primary text-xs font-semibold shadow-xs" data-i18n="service1Badge">
                   Hava Yolu &amp; Kara Yolu
                 </div>
               </div>
-              <div class="p-space-lg flex flex-col flex-1 justify-between space-y-space-md">
-                <div class="space-y-space-xs">
-                  <h3 class="font-headline-sm text-headline-sm text-primary" data-i18n="service1Title">
+              <div class="p-5 sm:p-space-lg flex flex-col flex-1 justify-between space-y-4">
+                <div class="space-y-1.5">
+                  <h3 class="font-headline-sm text-lg sm:text-headline-sm text-primary" data-i18n="service1Title">
                     Cenaze Nakil İşlemleri
                   </h3>
-                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-i18n="service1Desc">
+                  <p class="text-xs sm:text-body-sm text-on-surface-variant leading-relaxed" data-i18n="service1Desc">
                     Almanya’nın her noktasından Türkiye’ye veya dünyanın diğer ülkelerine hava yolu ile hızlı ve güvenli nakil. Çinko tabut mühürleme, gümrük muamelesi ve havaalanı teslimat koordinasyonu.
                   </p>
                 </div>
-                <ul class="space-y-1.5 pt-space-xs text-text-muted font-body-sm text-body-sm">
+                <ul class="space-y-1.5 text-text-muted text-xs sm:text-body-sm">
                   <li class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                    <span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
                     <span data-i18n="service1Item1">THY &amp; uluslararası kargo protokolleri</span>
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                    <span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
                     <span data-i18n="service1Item2">Havalimanından memleket köyüne nakil</span>
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                    <span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
                     <span data-i18n="service1Item3">Almanya içi yerel mezarlığa defin</span>
                   </li>
                 </ul>
@@ -505,35 +834,34 @@
 
             <!-- Service 2: İslami Yıkama & Kefenleme -->
             <div class="bg-surface-subtle rounded-xl overflow-hidden shadow-sm flex flex-col group border border-border-quiet/40">
-              <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+              <div class="relative h-44 sm:h-48 w-full overflow-hidden bg-surface-container">
                 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                     data-alt="Peaceful preparation room with pure white linen shroud fabric" 
                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM2FskkSU8CfsKOEZy9z8TVuegrDeIU3pGZuiNCBr0IqtITrzXb8Xtf1FP85QEWaI_lg-orbYCAS39VKcPtpJ5Apx7Bc20xWY37bTJR7z-jZ9iS3XZ6aHccMrRT5nN88MXxDsfskC1CUfIHHX5WlYw91URHDwrpDcnvDYcQBrJZ3XnOoVm6RTkcbX4MhO2-oBuI-BGBaXOZjmGaHkVBTszpgAkY8XerClpbJGWwAm870IlD0p3Kxp1gu8c-Z84rZy2GB366NTjWwr4XjY"
                      alt="İslami Yıkama & Kefenleme">
-                <div class="absolute top-3 left-3 bg-canvas-base/90 backdrop-blur px-2.5 py-1 rounded text-primary font-label-sm text-label-sm font-semibold shadow-xs" data-i18n="service2Badge">
+                <div class="absolute top-2.5 left-2.5 bg-canvas-base/90 backdrop-blur px-2.5 py-1 rounded text-primary text-xs font-semibold shadow-xs" data-i18n="service2Badge">
                   Gasilhane &amp; Tekfin
                 </div>
               </div>
-              <div class="p-space-lg flex flex-col flex-1 justify-between space-y-space-md">
-                <div class="space-y-space-xs">
-                  <h3 class="font-headline-sm text-headline-sm text-primary" data-i18n="service2Title">
+              <div class="p-5 sm:p-space-lg flex flex-col flex-1 justify-between space-y-4">
+                <div class="space-y-1.5">
+                  <h3 class="font-headline-sm text-lg sm:text-headline-sm text-primary" data-i18n="service2Title">
                     İslami Yıkama &amp; Kefenleme
                   </h3>
-                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-i18n="service2Desc">
+                  <p class="text-xs sm:text-body-sm text-on-surface-variant leading-relaxed" data-i18n="service2Desc">
                     Cinsiyete uygun hoca hanımlar ve hoca efendiler nezaretinde İslami usullere tam riayet edilerek yapılan gasil, tekfin ve koku sürme vazifeleri. Ailenin katılım ve helalleşme imkanı.
                   </p>
                 </div>
-                <ul class="space-y-1.5 pt-space-xs text-text-muted font-body-sm text-body-sm">
+                <ul class="space-y-1.5 text-text-muted text-xs sm:text-body-sm">
                   <li class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                    <span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
                     <span data-i18n="service2Item1">Ehliyetli din görevlileri refakati</span>
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                    <span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
                     <span data-i18n="service2Item2">Sünnete uygun pamuklu kefenleme</span>
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                    <span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
                     <span data-i18n="service2Item3">Cenaze Namazı (Janazah) organizasyonu</span>
                   </li>
                 </ul>
@@ -542,35 +870,34 @@
 
             <!-- Service 3: Resmi & Bürokratik Süreçler -->
             <div class="bg-surface-subtle rounded-xl overflow-hidden shadow-sm flex flex-col group border border-border-quiet/40">
-              <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+              <div class="relative h-44 sm:h-48 w-full overflow-hidden bg-surface-container">
                 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                     data-alt="Dignified wooden desk with neat documents and fountain pen" 
                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuADcigYwgCUVrxrDcEW7w0AITedFtbV2OwZWmQsnxFnh_MSgU8yNC1Fut4lv-IGmMHrJ5bcHl1DXliMmtYQBRQsEzy2WQ89uF5JrBQWEb80UGBo2yY7XamigULNUNIbodn2z-jjOLEIdCcEURmq1AWtPxV5LZ8BLzuIGqZWQOn_fok6JySgGPZWR6B3Q9jnW3Cjdu7Qs5jdnmTlwyVoYki6gsXkdKJ8qWJnZ0njIKgHcZsjdo70yLD8_b_zi8NZyxXWViewuNsNInwjGy8"
                      alt="Resmi & Bürokratik Süreçler">
-                <div class="absolute top-3 left-3 bg-canvas-base/90 backdrop-blur px-2.5 py-1 rounded text-primary font-label-sm text-label-sm font-semibold shadow-xs" data-i18n="service3Badge">
+                <div class="absolute top-2.5 left-2.5 bg-canvas-base/90 backdrop-blur px-2.5 py-1 rounded text-primary text-xs font-semibold shadow-xs" data-i18n="service3Badge">
                   Alman &amp; Konsolosluk Evrakları
                 </div>
               </div>
-              <div class="p-space-lg flex flex-col flex-1 justify-between space-y-space-md">
-                <div class="space-y-space-xs">
-                  <h3 class="font-headline-sm text-headline-sm text-primary" data-i18n="service3Title">
+              <div class="p-5 sm:p-space-lg flex flex-col flex-1 justify-between space-y-4">
+                <div class="space-y-1.5">
+                  <h3 class="font-headline-sm text-lg sm:text-headline-sm text-primary" data-i18n="service3Title">
                     Resmi &amp; Bürokratik Süreçler
                   </h3>
-                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-i18n="service3Desc">
+                  <p class="text-xs sm:text-body-sm text-on-surface-variant leading-relaxed" data-i18n="service3Desc">
                     Vefat belgesinin (Sterbeurkunde) nüfus dairesinden (Standesamt) temini, uluslararası yol izinleri (Leichenpass), konsolosluk tescili ve sağlık müdürlüğü onaylarının eksiksiz takibi.
                   </p>
                 </div>
-                <ul class="space-y-1.5 pt-space-xs text-text-muted font-body-sm text-body-sm">
+                <ul class="space-y-1.5 text-text-muted text-xs sm:text-body-sm">
                   <li class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                    <span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
                     <span data-i18n="service3Item1">Standesamt ve hastane yazışmaları</span>
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                    <span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
                     <span data-i18n="service3Item2">Türkiye Başkonsolosluğu işlemleri</span>
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                    <span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
                     <span data-i18n="service3Item3">Cenaze nakil fonu (Cenaze Fonu) irtibatı</span>
                   </li>
                 </ul>
@@ -584,62 +911,62 @@
       <!-- =====================================================================
            VEFAT ANINDA İLK 3 ADIM (Horizontal Step-by-Step Roadmap)
            ===================================================================== -->
-      <section id="vefat-aninda" class="w-full bg-surface-container/50 py-space-2xl border-t border-border-quiet/30">
-        <div class="max-w-[1200px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+      <section id="vefat-aninda" class="w-full bg-surface-container/50 py-10 sm:py-space-2xl border-t border-border-quiet/30">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-margin md:px-margin-tablet lg:px-margin-desktop">
           
-          <div class="text-center max-w-2xl mx-auto mb-space-xl space-y-space-xs">
-            <span class="font-label-sm text-label-sm uppercase tracking-widest text-text-muted font-semibold" data-i18n="roadmapSub">
+          <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-space-xl space-y-1.5">
+            <span class="text-xs uppercase tracking-widest text-text-muted font-semibold" data-i18n="roadmapSub">
               ACİL REHBER VE YOL HARİTASI
             </span>
-            <h2 class="font-headline-lg text-headline-lg text-primary" data-i18n="roadmapTitle">
+            <h2 class="font-headline-lg text-2xl sm:text-3xl lg:text-headline-lg text-primary" data-i18n="roadmapTitle">
               Vefat Anında Ne Yapmalı? İlk 3 Adım
             </h2>
-            <p class="font-body-md text-body-md text-on-surface-variant" data-i18n="roadmapDesc">
+            <p class="text-sm sm:text-body-md text-on-surface-variant" data-i18n="roadmapDesc">
               Telaşa kapılmadan, huzur içerisinde atılacak adımlar konusunda ailenizi yönlendiriyoruz.
             </p>
           </div>
 
-          <!-- 3-Step Interactive Horizontal Cards -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+          <!-- 3-Step Horizontal / Vertical Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-space-lg relative">
             
             <!-- Step 1 -->
-            <div class="bg-canvas-base rounded-xl p-space-lg shadow-sm relative flex flex-col justify-between border border-border-quiet/30">
-              <div class="space-y-space-sm">
+            <div class="bg-canvas-base rounded-xl p-5 sm:p-space-lg shadow-sm relative flex flex-col justify-between border border-border-quiet/30 space-y-4">
+              <div class="space-y-2">
                 <div class="flex items-center justify-between">
-                  <span class="w-9 h-9 rounded-full bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold">1</span>
-                  <span class="font-label-sm text-label-sm text-text-muted uppercase" data-i18n="step1Badge">İlk İşlem</span>
+                  <span class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-primary text-on-primary text-sm sm:text-base flex items-center justify-center font-bold">1</span>
+                  <span class="text-xs text-text-muted uppercase font-medium" data-i18n="step1Badge">İlk İşlem</span>
                 </div>
-                <h3 class="font-headline-sm text-headline-sm text-primary" data-i18n="step1Title">
+                <h3 class="font-headline-sm text-lg sm:text-headline-sm text-primary" data-i18n="step1Title">
                   Doktor Çağrılması
                 </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" data-i18n="step1Desc">
+                <p class="text-xs sm:text-body-md text-on-surface-variant leading-relaxed" data-i18n="step1Desc">
                   Vefat evde gerçekleştiyse vakit kaybetmeden ev doktoruna veya nöbetçi doktora (116 117) haber verilir. Hekim muayeneyi yaparak resmi ölüm belgesini („Totenschein“) tanzim eder. Hastane veya bakımevinde ise bu belge kurumca hazırlanır.
                 </p>
               </div>
-              <div class="pt-space-md">
-                <div class="p-2.5 rounded bg-surface-subtle text-primary font-body-sm text-body-sm flex items-center gap-2 border border-border-quiet/40">
-                  <span class="material-symbols-outlined text-[18px]">info</span>
+              <div>
+                <div class="p-2.5 rounded bg-surface-subtle text-primary text-xs sm:text-body-sm flex items-center gap-2 border border-border-quiet/40">
+                  <span class="material-symbols-outlined text-[16px] shrink-0">info</span>
                   <span data-i18n="step1Tip">Totenschein belgesini saklayınız.</span>
                 </div>
               </div>
             </div>
 
             <!-- Step 2: Emergency Call to +4915235835665 -->
-            <div class="bg-canvas-base rounded-xl p-space-lg shadow-sm relative flex flex-col justify-between border-2 border-urgent-support/40">
-              <div class="space-y-space-sm">
+            <div class="bg-canvas-base rounded-xl p-5 sm:p-space-lg shadow-sm relative flex flex-col justify-between border-2 border-urgent-support/50 space-y-4">
+              <div class="space-y-2">
                 <div class="flex items-center justify-between">
-                  <span class="w-9 h-9 rounded-full bg-urgent-support text-on-error font-headline-sm text-headline-sm flex items-center justify-center font-bold">2</span>
-                  <span class="font-label-sm text-label-sm text-urgent-support font-semibold uppercase" data-i18n="step2Badge">7/24 Çağrı</span>
+                  <span class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-urgent-support text-on-error text-sm sm:text-base flex items-center justify-center font-bold">2</span>
+                  <span class="text-xs text-urgent-support font-semibold uppercase" data-i18n="step2Badge">7/24 Çağrı</span>
                 </div>
-                <h3 class="font-headline-sm text-headline-sm text-primary" data-i18n="step2Title">
+                <h3 class="font-headline-sm text-lg sm:text-headline-sm text-primary" data-i18n="step2Title">
                   eümmet’e Ulaşılması
                 </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" data-i18n="step2Desc">
+                <p class="text-xs sm:text-body-md text-on-surface-variant leading-relaxed" data-i18n="step2Desc">
                   Günün veya gecenin her saatinde <strong>+49 152 35835665</strong> numaralı hattımızı arayarak durumu bildiriniz. Uzman ekibimiz hemen yola çıkarak merhumun uygun şartlarda intikalini ve ilk muhafazayı sağlar.
                 </p>
               </div>
-              <div class="pt-space-md">
-                <a class="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded bg-urgent-support text-on-error font-label-md text-label-md hover:bg-[#7b2e2e] transition-all shadow-sm transform hover:-translate-y-0.5 active:translate-y-0" 
+              <div>
+                <a class="w-full flex items-center justify-center gap-2 py-3 px-3 rounded-lg bg-urgent-support text-on-error font-semibold text-xs sm:text-sm hover:bg-[#7b2e2e] transition-all shadow-sm active:scale-95 text-center" 
                    href="tel:+4915235835665" 
                    title="Hemen Arayın">
                   <span class="material-symbols-outlined text-[18px]">call</span>
@@ -649,22 +976,22 @@
             </div>
 
             <!-- Step 3 -->
-            <div class="bg-canvas-base rounded-xl p-space-lg shadow-sm relative flex flex-col justify-between border border-border-quiet/30">
-              <div class="space-y-space-sm">
+            <div class="bg-canvas-base rounded-xl p-5 sm:p-space-lg shadow-sm relative flex flex-col justify-between border border-border-quiet/30 space-y-4">
+              <div class="space-y-2">
                 <div class="flex items-center justify-between">
-                  <span class="w-9 h-9 rounded-full bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold">3</span>
-                  <span class="font-label-sm text-label-sm text-text-muted uppercase" data-i18n="step3Badge">Ebedi Uğurlama</span>
+                  <span class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-primary text-on-primary text-sm sm:text-base flex items-center justify-center font-bold">3</span>
+                  <span class="text-xs text-text-muted uppercase font-medium" data-i18n="step3Badge">Ebedi Uğurlama</span>
                 </div>
-                <h3 class="font-headline-sm text-headline-sm text-primary" data-i18n="step3Title">
+                <h3 class="font-headline-sm text-lg sm:text-headline-sm text-primary" data-i18n="step3Title">
                   Huzurla Uğurlama
                 </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" data-i18n="step3Desc">
+                <p class="text-xs sm:text-body-md text-on-surface-variant leading-relaxed" data-i18n="step3Desc">
                   Resmi evrakların tamamlanmasının ardından gasil, kefenleme ve cenaze namazı tertip edilir. Ailenin isteğine göre memlekete uçak nakli veya Almanya’daki İslami mezarlığa defin gerçekleştirilir.
                 </p>
               </div>
-              <div class="pt-space-md">
-                <div class="p-2.5 rounded bg-surface-subtle text-primary font-body-sm text-body-sm flex items-center gap-2 border border-border-quiet/40">
-                  <span class="material-symbols-outlined text-[18px]">mosque</span>
+              <div>
+                <div class="p-2.5 rounded bg-surface-subtle text-primary text-xs sm:text-body-sm flex items-center gap-2 border border-border-quiet/40">
+                  <span class="material-symbols-outlined text-[16px] shrink-0">mosque</span>
                   <span data-i18n="step3Tip">Cenaze namazı ve defin refakati</span>
                 </div>
               </div>
@@ -673,11 +1000,11 @@
           </div>
 
           <!-- Comfort Quote Strip -->
-          <div class="mt-space-xl p-space-md bg-canvas-base rounded-lg text-center shadow-xs border border-border-quiet/30">
-            <p class="font-headline-sm text-headline-sm text-primary italic font-normal" data-i18n="quoteText">
+          <div class="mt-8 sm:mt-space-xl p-4 sm:p-space-md bg-canvas-base rounded-lg text-center shadow-xs border border-border-quiet/40">
+            <p class="text-sm sm:text-headline-sm text-primary italic font-normal" data-i18n="quoteText">
               “Göz yaşarır, kalp mahzun olur; fakat biz Rabbimizin razı olacağından başka bir söz söylemeyiz.”
             </p>
-            <span class="block font-label-sm text-label-sm text-text-muted mt-1" data-i18n="quoteSource">
+            <span class="block text-xs text-text-muted mt-1" data-i18n="quoteSource">
               (Hadis-i Şerif)
             </span>
           </div>
@@ -686,78 +1013,78 @@
       </section>
 
       <!-- =====================================================================
-           YETKİLİ & KURUMSAL BİLGİLER + INTERACTIVE GOOGLE MAPS WIDGET
+           YETKİLİ & KURUMSAL BİLGİLER + REAL GOOGLE MAPS WIDGET
            ===================================================================== -->
-      <section id="hakkimizda" class="w-full bg-canvas-base py-space-2xl">
-        <div class="max-w-[1200px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
-          <div class="bg-surface-subtle rounded-xl p-space-lg lg:p-space-xl shadow-sm border border-border-quiet/40">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-stretch">
+      <section id="hakkimizda" class="w-full bg-canvas-base py-10 sm:py-space-2xl">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-margin md:px-margin-tablet lg:px-margin-desktop">
+          <div class="bg-surface-subtle rounded-xl p-5 sm:p-6 lg:p-space-xl shadow-sm border border-border-quiet/40">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
               
               <!-- Contact Details and Institution Bio -->
-              <div id="iletisim" class="lg:col-span-6 flex flex-col justify-between space-y-space-md">
-                <div class="space-y-space-xs">
-                  <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold uppercase">
+              <div id="iletisim" class="lg:col-span-6 flex flex-col justify-between space-y-4 sm:space-y-space-md">
+                <div class="space-y-1.5">
+                  <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary text-xs font-semibold uppercase">
                     <span class="material-symbols-outlined text-[16px]">corporate_fare</span>
                     <span data-i18n="corpBadge">Yetkili Cenaze Müessesesi</span>
                   </div>
-                  <h2 class="font-headline-lg text-headline-lg text-primary" data-i18n="corpTitle">
+                  <h2 class="font-headline-lg text-2xl sm:text-3xl lg:text-headline-lg text-primary" data-i18n="corpTitle">
                     eümmet Islamische Bestattungen
                   </h2>
-                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" data-i18n="corpDesc">
+                  <p class="text-xs sm:text-body-md text-on-surface-variant leading-relaxed" data-i18n="corpDesc">
                     Tuttlingen / Wurmlingen merkezli olarak tüm Baden-Württemberg ve Almanya çapında Müslüman toplumun manevi hassasiyetlerine tam bağlılıkla hizmet sunmaktayız.
                   </p>
                 </div>
 
                 <!-- Profile / Leadership Card: Ebru Aydilek -->
-                <div class="bg-canvas-base rounded-lg p-space-md shadow-xs flex items-center gap-space-md border border-border-quiet/30">
+                <div class="bg-canvas-base rounded-lg p-3 sm:p-space-md shadow-xs flex items-center gap-3 sm:gap-space-md border border-border-quiet/40">
                   <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-KVd2ebT6eT3pq_soIHUwzOM9AiyCIsREbeybhpvxMBezDx4GL1CDpaO3iFR7hCdB8jAFfwxg-faiqp68_cK4JoaT-Hl3MRpOKt-wLOtmJl0e9ZvBO8vzL9bSjv2Mu0nuiAm0WcDIXhvyhVTe27FeU4Dj5vW-yTE0GPQNHqWHtrauPDyPcdaOWrLu9fhmAO88PK8wArWNAGMvxSaEtTqhEkmp6VXne99M6YhU4Q8r64vMgSAF5MGjJQ" 
                        alt="Ebru Aydilek - Inhaberin & Leitung" 
-                       class="w-16 h-16 rounded-full object-cover object-top shrink-0 shadow-xs border border-border-quiet/50">
+                       class="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover object-top shrink-0 shadow-xs border border-border-quiet/50">
                   <div>
-                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted block" data-i18n="leaderRole">
+                    <span class="text-[11px] sm:text-xs uppercase tracking-wider text-text-muted block font-medium" data-i18n="leaderRole">
                       Ansprechpartnerin &amp; Leitung / Müessese Sahibi
                     </span>
-                    <h4 class="font-headline-sm text-headline-sm text-primary font-semibold" data-i18n="leaderName">
+                    <h4 class="text-base sm:text-headline-sm text-primary font-bold" data-i18n="leaderName">
                       Ebru Aydilek
                     </h4>
-                    <p class="font-body-sm text-body-sm text-on-surface-variant" data-i18n="leaderTitle">
+                    <p class="text-xs sm:text-body-sm text-on-surface-variant" data-i18n="leaderTitle">
                       Resmi Temsilci &amp; Cenaze Danışmanı
                     </p>
                   </div>
                 </div>
 
                 <!-- Address and Phone Quick Cards Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-space-sm pt-1">
                   
                   <!-- Address Info Box -->
-                  <div class="p-space-sm rounded-lg bg-canvas-base shadow-xs space-y-1 border border-border-quiet/30">
-                    <span class="font-label-sm text-label-sm uppercase text-text-muted flex items-center gap-1">
+                  <div class="p-3 rounded-lg bg-canvas-base shadow-xs space-y-1 border border-border-quiet/40">
+                    <span class="text-xs uppercase text-text-muted flex items-center gap-1 font-medium">
                       <span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
                       <span data-i18n="corpAddressLabel">Adres &amp; Merkez</span>
                     </span>
-                    <p class="font-body-sm text-body-sm text-on-surface font-medium leading-snug" data-i18n="corpAddressVal">
+                    <p class="text-xs sm:text-sm text-on-surface font-medium leading-snug" data-i18n="corpAddressVal">
                       Hohbühlweg 8<br>
                       78573 Wurmlingen, Deutschland
                     </p>
                   </div>
 
                   <!-- 24/7 Telephone Box: Calls +4915235835665 -->
-                  <div class="p-space-sm rounded-lg bg-canvas-base shadow-xs space-y-1 border border-border-quiet/30">
-                    <span class="font-label-sm text-label-sm uppercase text-text-muted flex items-center gap-1">
+                  <div class="p-3 rounded-lg bg-canvas-base shadow-xs space-y-1 border border-border-quiet/40">
+                    <span class="text-xs uppercase text-text-muted flex items-center gap-1 font-medium">
                       <span class="material-symbols-outlined text-[16px] text-urgent-support">phone_in_talk</span>
                       <span data-i18n="corpPhoneLabel">7/24 Kesintisiz Hat</span>
                     </span>
-                    <a href="tel:+4915235835665" class="font-body-sm text-body-sm text-urgent-support font-bold text-base leading-snug hover:underline block" title="Hemen Arayın: +49 152 35835665">
+                    <a href="tel:+4915235835665" class="text-sm sm:text-base text-urgent-support font-bold leading-snug hover:underline block" title="Hemen Arayın: +49 152 35835665">
                       +49 152 35835665
                     </a>
                   </div>
 
                 </div>
 
-                <!-- Direct Action Buttons: Call & Email -->
-                <div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+                <!-- Direct Action Buttons: Call & Email (Full width on mobile) -->
+                <div class="flex flex-col sm:flex-row items-stretch gap-3 pt-1">
                   <!-- Direct Call Button -->
-                  <a class="flex-1 min-w-[200px] flex items-center justify-center gap-space-xs py-3 px-space-md rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm transform hover:-translate-y-0.5" 
+                  <a class="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-primary text-on-primary font-semibold text-xs sm:text-sm hover:bg-primary-container transition-all shadow-sm active:scale-95 text-center" 
                      href="tel:+4915235835665" 
                      title="Doğrudan Ara">
                     <span class="material-symbols-outlined text-[18px]">call</span>
@@ -765,7 +1092,7 @@
                   </a>
 
                   <!-- Email Link -->
-                  <a class="flex-1 min-w-[200px] flex items-center justify-center gap-space-xs py-3 px-space-md rounded bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors border border-border-quiet/50" 
+                  <a class="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-surface-container text-primary font-semibold text-xs sm:text-sm hover:bg-surface-container-high transition-colors border border-border-quiet/50 active:scale-95 text-center" 
                      href="mailto:info@uemmet.de" 
                      title="E-Posta Gönder">
                     <span class="material-symbols-outlined text-[18px]">alternate_email</span>
@@ -776,35 +1103,35 @@
               </div>
 
               <!-- Interactive Location: REAL GOOGLE MAPS WIDGET -->
-              <div class="lg:col-span-6 flex flex-col space-y-space-sm">
-                <div class="w-full h-full min-h-[380px] rounded-xl overflow-hidden shadow-sm relative bg-surface-container flex flex-col border border-border-quiet/50">
+              <div class="lg:col-span-6 flex flex-col space-y-space-sm mt-4 lg:mt-0">
+                <div class="w-full h-full min-h-[320px] sm:min-h-[380px] rounded-xl overflow-hidden shadow-sm relative bg-surface-container flex flex-col border border-border-quiet/50">
                   
                   <!-- Google Maps Interactive Widget Container -->
-                  <div class="w-full h-full min-h-[340px] relative">
+                  <div class="w-full h-full min-h-[280px] sm:min-h-[340px] relative">
                     
                     <!-- Live Google Maps Iframe pointing directly to Hohbühlweg 8, 78573 Wurmlingen, Germany -->
                     <iframe 
                       src="https://maps.google.com/maps?q=Hohb%C3%BChlweg%208,%2078573%20Wurmlingen,%20Germany&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                      class="w-full h-full min-h-[340px] border-0" 
+                      class="w-full h-full min-h-[280px] sm:min-h-[340px] border-0" 
                       allowfullscreen="" 
                       loading="lazy" 
                       referrerpolicy="no-referrer-when-downgrade"
                       title="eümmet Islamische Bestattungen Google Maps Standort">
                     </iframe>
 
-                    <!-- Map Overlay Badge (Top Left) -->
-                    <div class="pointer-events-none absolute top-3 left-3 right-3 sm:right-auto z-10">
-                      <div class="pointer-events-auto bg-canvas-base/95 backdrop-blur-md p-space-sm rounded-lg shadow-md max-w-xs border border-border-quiet/60">
+                    <!-- Map Overlay Badge (Top Left - Compact on mobile) -->
+                    <div class="pointer-events-none absolute top-2.5 left-2.5 right-2.5 sm:right-auto z-10">
+                      <div class="pointer-events-auto bg-canvas-base/95 backdrop-blur-md p-2.5 sm:p-space-sm rounded-lg shadow-md max-w-xs border border-border-quiet/60">
                         <div class="flex items-start gap-2">
-                          <span class="material-symbols-outlined text-urgent-support text-[22px] mt-0.5">location_on</span>
+                          <span class="material-symbols-outlined text-urgent-support text-[20px] sm:text-[22px] mt-0.5 shrink-0">location_on</span>
                           <div>
-                            <h5 class="font-headline-sm text-headline-sm text-primary text-base font-bold" data-i18n="mapTitle">
+                            <h5 class="text-sm sm:text-base font-bold text-primary leading-tight" data-i18n="mapTitle">
                               ümmet Bestattungen
                             </h5>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant" data-i18n="mapAddress">
+                            <p class="text-xs text-on-surface-variant font-medium mt-0.5" data-i18n="mapAddress">
                               Hohbühlweg 8, 78573 Wurmlingen
                             </p>
-                            <span class="inline-block mt-1 text-label-sm font-label-sm text-secondary font-semibold" data-i18n="mapRegionNote">
+                            <span class="inline-block mt-0.5 text-[11px] text-secondary font-semibold" data-i18n="mapRegionNote">
                               Tuttlingen / Villingen-Schwenningen Çevresi
                             </span>
                           </div>
@@ -813,8 +1140,8 @@
                     </div>
 
                     <!-- Google Maps Directions Link Button (Bottom Right) -->
-                    <div class="pointer-events-none absolute bottom-3 right-3 z-10">
-                      <a class="pointer-events-auto flex items-center gap-1.5 px-3 py-2 rounded bg-primary text-on-primary font-label-sm text-label-sm shadow-md hover:bg-primary-container transition-all hover:scale-105 active:scale-95" 
+                    <div class="pointer-events-none absolute bottom-2.5 right-2.5 z-10">
+                      <a class="pointer-events-auto flex items-center gap-1.5 px-3 py-1.5 sm:py-2 rounded-lg bg-primary text-on-primary text-xs sm:text-sm font-semibold shadow-md hover:bg-primary-container transition-all hover:scale-105 active:scale-95" 
                          href="https://maps.google.com/?q=Hohb%C3%BChlweg+8+78573+Wurmlingen+Germany" 
                          rel="noopener noreferrer" 
                          target="_blank"
@@ -827,9 +1154,9 @@
                   </div>
 
                   <!-- Service Area Note Bar -->
-                  <div class="bg-surface-container-high p-3 flex flex-wrap items-center justify-between text-on-surface-variant font-body-sm text-body-sm gap-2 border-t border-border-quiet/40">
+                  <div class="bg-surface-container-high p-2.5 sm:p-3 flex flex-wrap items-center justify-between text-on-surface-variant text-xs sm:text-sm gap-2 border-t border-border-quiet/40">
                     <span class="flex items-center gap-1.5">
-                      <span class="material-symbols-outlined text-primary text-[18px]">local_shipping</span>
+                      <span class="material-symbols-outlined text-primary text-[16px] sm:text-[18px]">local_shipping</span>
                       <span data-i18n="mapAirportsNote">Baden-Württemberg ve tüm Almanya havalimanlarına transfer</span>
                     </span>
                     <span class="font-semibold text-primary" data-i18n="mapAirportsList">Stuttgart · Frankfurt · Zürich</span>
@@ -846,33 +1173,35 @@
       <!-- =====================================================================
            PEACE OF MIND BOTTOM ACCORDION / CENAZE FONU STRIP
            ===================================================================== -->
-      <section class="w-full bg-surface-subtle py-space-xl border-t border-border-quiet/40">
-        <div class="max-w-[1200px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg items-center">
+      <section class="w-full bg-surface-subtle py-8 sm:py-space-xl border-t border-border-quiet/40">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-margin md:px-margin-tablet lg:px-margin-desktop">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             
-            <div class="space-y-space-xs">
-              <span class="font-label-sm text-label-sm uppercase tracking-widest text-text-muted font-semibold" data-i18n="assuranceSub">
+            <div class="space-y-1.5">
+              <span class="text-xs uppercase tracking-widest text-text-muted font-semibold" data-i18n="assuranceSub">
                 GÜVEN &amp; ŞEFFAFLIK
               </span>
-              <h3 class="font-headline-md text-headline-md text-primary" data-i18n="assuranceTitle">
+              <h3 class="font-headline-md text-xl sm:text-2xl lg:text-headline-md text-primary" data-i18n="assuranceTitle">
                 Cenaze Fonu veya Özel Sigortanız Var mı?
               </h3>
-              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" data-i18n="assuranceDesc">
+              <p class="text-xs sm:text-body-md text-on-surface-variant leading-relaxed" data-i18n="assuranceDesc">
                 DİTİB Cenaze Fonu, IGMG Cenaze Yardımlaşma Fonu, Türk Federasyonu veya diğer özel cenaze sigortalarıyla tam uyumlu çalışmaktayız. Fon üyelik işlemlerinizin evrak sürecini sizin adınıza doğrudan yürütüyoruz.
               </p>
             </div>
 
-            <div class="flex flex-col sm:flex-row items-center justify-end gap-space-md">
-              <div class="p-space-md rounded-lg bg-canvas-base shadow-xs text-center w-full sm:w-auto border border-border-quiet/40">
-                <span class="block font-headline-sm text-headline-sm text-primary font-bold">100%</span>
-                <span class="font-body-sm text-body-sm text-text-muted" data-i18n="stat1Label">İslami Usul Güvencesi</span>
-              </div>
-              <div class="p-space-md rounded-lg bg-canvas-base shadow-xs text-center w-full sm:w-auto border border-border-quiet/40">
-                <span class="block font-headline-sm text-headline-sm text-urgent-support font-bold">24 / 7</span>
-                <span class="font-body-sm text-body-sm text-text-muted" data-i18n="stat2Label">Ulaşılabilirlik</span>
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-end gap-3 sm:gap-space-md">
+              <div class="grid grid-cols-2 sm:flex gap-3">
+                <div class="p-3 sm:p-space-md rounded-lg bg-canvas-base shadow-xs text-center border border-border-quiet/40">
+                  <span class="block text-lg sm:text-headline-sm text-primary font-bold">100%</span>
+                  <span class="text-xs text-text-muted" data-i18n="stat1Label">İslami Usul Güvencesi</span>
+                </div>
+                <div class="p-3 sm:p-space-md rounded-lg bg-canvas-base shadow-xs text-center border border-border-quiet/40">
+                  <span class="block text-lg sm:text-headline-sm text-urgent-support font-bold">24 / 7</span>
+                  <span class="text-xs text-text-muted" data-i18n="stat2Label">Ulaşılabilirlik</span>
+                </div>
               </div>
               <!-- Danışma Hattı Call Button: Calls +4915235835665 -->
-              <a class="w-full sm:w-auto flex items-center justify-center gap-2 px-space-md py-3 rounded bg-urgent-support text-on-error font-label-md text-label-md shadow-sm hover:bg-[#7b2e2e] transition-all transform hover:-translate-y-0.5 active:translate-y-0" 
+              <a class="flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-urgent-support text-on-error font-semibold text-xs sm:text-sm shadow-sm hover:bg-[#7b2e2e] transition-all active:scale-95 text-center" 
                  href="tel:+4915235835665" 
                  title="Danışma Hattını Arayın">
                 <span class="material-symbols-outlined text-[18px]">ring_volume</span>
@@ -890,50 +1219,50 @@
   <!-- =========================================================================
        FOOTER
        ========================================================================= -->
-  <footer class="w-full bg-surface-subtle py-space-2xl border-t border-border-quiet/50">
-    <div class="max-w-[1200px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-2xl">
+  <footer class="w-full bg-surface-subtle py-10 sm:py-space-2xl border-t border-border-quiet/50">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-margin md:px-margin-tablet lg:px-margin-desktop">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-8 sm:pb-space-2xl">
         
         <!-- Column 1: Company Profile -->
-        <div class="space-y-space-md">
-          <div class="space-y-space-xs">
+        <div class="space-y-3">
+          <div class="space-y-1.5">
             <img src="assets/logo.png" 
                  onerror="this.src='https://lh3.googleusercontent.com/aida/AEtjO1WbKyvuB0dxS-_Arw2xu9tpOjjwV5oKCGHyEKJYOzNblJerP4h5HmO66eTakjDfLVdns1g5ljxf8E6TYizE6HwPNGsjJbToX_R9DElD7pjZpKqiC0yXDBknCnz5Ku8pFY5HI_HwcJVDcUAGhH0h87GoBwPO96840ZJ5VK9JEuJWmtY3dFHgVCPCgBBT0jJmr3Ma3lj_ALGJdW9VTtaaVtSqqRJ78Jn2YSGQTdSBBEhiWA'" 
                  alt="Ümmet Cenaze Nakil Logo" 
-                 class="h-14 w-auto object-contain mb-2">
-            <p class="font-body-sm text-body-sm text-text-muted leading-relaxed" data-i18n="footerAbout">
+                 class="h-12 w-auto object-contain mb-1">
+            <p class="text-xs sm:text-body-sm text-text-muted leading-relaxed" data-i18n="footerAbout">
               İslami Cenaze Hizmetleri &amp; Uluslararası Nakil. Hayatın en ağır imtihanında sünnete uygun, şefkatli ve vakur refakat.
             </p>
           </div>
-          <div class="space-y-1">
-            <p class="font-label-md text-label-md text-primary font-medium" data-i18n="footerOwner">
+          <div class="space-y-0.5 text-xs">
+            <p class="text-primary font-bold" data-i18n="footerOwner">
               Müessese Sahibi: Ebru Aydilek
             </p>
-            <p class="font-body-sm text-body-sm text-text-muted" data-i18n="footerCoverage">
+            <p class="text-text-muted" data-i18n="footerCoverage">
               Baden-Württemberg genelinde ve tüm Almanya'da 7/24 hizmet.
             </p>
           </div>
         </div>
 
         <!-- Column 2: Immediate Help & Contact -->
-        <div class="space-y-space-sm">
-          <h3 class="font-headline-sm text-headline-sm text-primary" data-i18n="footerColHelp">
+        <div class="space-y-2.5">
+          <h3 class="font-headline-sm text-base sm:text-headline-sm text-primary" data-i18n="footerColHelp">
             Acil Yardım &amp; İletişim
           </h3>
-          <div class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
-            <div class="flex items-start gap-space-xs">
-              <span class="material-symbols-outlined text-primary text-[18px] mt-1 shrink-0">location_on</span>
+          <div class="space-y-1.5 text-xs sm:text-body-sm text-on-surface-variant">
+            <div class="flex items-start gap-1.5">
+              <span class="material-symbols-outlined text-primary text-[16px] sm:text-[18px] mt-0.5 shrink-0">location_on</span>
               <span>Hohbühlweg 8<br>78573 Wurmlingen, Deutschland</span>
             </div>
             <!-- Clickable phone link: Calls +4915235835665 -->
-            <div class="flex items-center gap-space-xs">
-              <span class="material-symbols-outlined text-urgent-support text-[18px] shrink-0">call</span>
-              <a class="hover:text-primary font-semibold text-urgent-support transition-colors" href="tel:+4915235835665" title="Hemen Arayın">
+            <div class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-urgent-support text-[16px] sm:text-[18px] shrink-0">call</span>
+              <a class="hover:text-primary font-bold text-urgent-support transition-colors" href="tel:+4915235835665" title="Hemen Arayın">
                 +49 152 35835665 (24h)
               </a>
             </div>
-            <div class="flex items-center gap-space-xs">
-              <span class="material-symbols-outlined text-primary text-[18px] shrink-0">mail</span>
+            <div class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-primary text-[16px] sm:text-[18px] shrink-0">mail</span>
               <a class="hover:text-primary transition-colors" href="mailto:info@uemmet.de" title="E-Posta Gönder">
                 info@uemmet.de
               </a>
@@ -942,11 +1271,11 @@
         </div>
 
         <!-- Column 3: Religious Protocol -->
-        <div class="space-y-space-sm">
-          <h3 class="font-headline-sm text-headline-sm text-primary" data-i18n="footerColRitual">
+        <div class="space-y-2.5">
+          <h3 class="font-headline-sm text-base sm:text-headline-sm text-primary" data-i18n="footerColRitual">
             Dini Vecibeler
           </h3>
-          <ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+          <ul class="space-y-1 text-xs sm:text-body-sm text-on-surface-variant">
             <li data-i18n="ritualItem1">Gasil (İslami Usullere Göre Yıkama)</li>
             <li data-i18n="ritualItem2">Tekfin (Sünnete Uygun Pamuklu Kefenleme)</li>
             <li data-i18n="ritualItem3">Cenaze Namazı (Janazah) Organizasyonu</li>
@@ -956,33 +1285,33 @@
         </div>
 
         <!-- Column 4: Legal & Guide Links -->
-        <div class="space-y-space-sm">
-          <h3 class="font-headline-sm text-headline-sm text-primary" data-i18n="footerColLegal">
+        <div class="space-y-2.5">
+          <h3 class="font-headline-sm text-base sm:text-headline-sm text-primary" data-i18n="footerColLegal">
             Hukuki &amp; Rehber
           </h3>
-          <ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+          <ul class="space-y-1 text-xs sm:text-body-sm text-on-surface-variant">
             <li>
-              <a class="hover:text-primary transition-colors" href="#vefat-aninda" data-i18n="legalItem1">
+              <a class="hover:text-primary transition-colors block py-0.5" href="#vefat-aninda" data-i18n="legalItem1">
                 Vefat Anında İlk Adımlar (Rehber)
               </a>
             </li>
             <li>
-              <a class="hover:text-primary transition-colors" href="#hakkimizda" data-i18n="legalItem2">
+              <a class="hover:text-primary transition-colors block py-0.5" href="#hakkimizda" data-i18n="legalItem2">
                 Hakkımızda
               </a>
             </li>
             <li>
-              <a class="hover:text-primary transition-colors" href="cenaze-bildirimi.html" data-i18n="legalItem3">
+              <a class="hover:text-primary transition-colors block py-0.5" href="cenaze-bildirimi.html" data-i18n="legalItem3">
                 Cenaze Bildirimi
               </a>
             </li>
             <li>
-              <button type="button" onclick="openModal('impressumModal')" class="hover:text-primary transition-colors text-left" data-i18n="legalItem4">
+              <button type="button" onclick="openModal('impressumModal')" class="hover:text-primary transition-colors text-left block py-0.5" data-i18n="legalItem4">
                 Impressum
               </button>
             </li>
             <li>
-              <button type="button" onclick="openModal('datenschutzModal')" class="hover:text-primary transition-colors text-left" data-i18n="legalItem5">
+              <button type="button" onclick="openModal('datenschutzModal')" class="hover:text-primary transition-colors text-left block py-0.5" data-i18n="legalItem5">
                 Datenschutz
               </button>
             </li>
@@ -992,11 +1321,11 @@
       </div>
 
       <!-- Bottom Copyright & Legal Links -->
-      <div class="pt-space-lg border-t border-border-quiet/40 flex flex-col sm:flex-row items-center justify-between gap-space-md text-text-muted font-body-sm text-body-sm">
+      <div class="pt-6 border-t border-border-quiet/40 flex flex-col sm:flex-row items-center justify-between gap-3 text-text-muted text-xs sm:text-body-sm text-center sm:text-left">
         <p data-i18n="footerCopyright">
           © 2025 ümmet Islamische Bestattungen – Ebru Aydilek. Tüm hakları saklıdır.
         </p>
-        <div class="flex items-center gap-space-md">
+        <div class="flex items-center gap-3">
           <button type="button" onclick="openModal('impressumModal')" class="hover:text-on-surface transition-colors" data-i18n="legalItem4">
             Impressum
           </button>
@@ -1011,16 +1340,29 @@
   </footer>
 
   <!-- =========================================================================
+       FIXED BOTTOM MOBILE EMERGENCY CALL BAR (Persists on Mobile Only)
+       ========================================================================= -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-canvas-base/95 backdrop-blur-md border-t border-border-quiet/60 px-3 py-2 flex items-center gap-2 shadow-2xl">
+    <a href="tel:+4915235835665" class="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-urgent-support text-on-error font-semibold text-xs shadow-md active:scale-95 transition-transform">
+      <span class="material-symbols-outlined text-[18px]">call</span>
+      <span data-i18n="mobileBarCall">7/24 Acil Çağrı</span>
+    </a>
+    <a href="https://wa.me/4915235835665" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-[#25D366] text-white font-semibold text-xs shadow-md active:scale-95 transition-transform">
+      <span class="material-symbols-outlined text-[18px]">chat</span>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- =========================================================================
        MODALS: Impressum & Datenschutz
        ========================================================================= -->
-  <!-- Impressum Modal -->
-  <div id="impressumModal" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm items-center justify-center p-4">
-    <div class="bg-canvas-base rounded-xl max-w-xl w-full max-h-[85vh] overflow-y-auto p-6 shadow-xl border border-border-quiet relative">
+  <div id="impressumModal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm items-center justify-center p-4">
+    <div class="bg-canvas-base rounded-xl max-w-xl w-full max-h-[85vh] overflow-y-auto p-6 shadow-2xl border border-border-quiet relative">
       <button type="button" onclick="closeModal('impressumModal')" class="absolute top-4 right-4 p-1.5 rounded-full hover:bg-surface-subtle text-text-muted" aria-label="Kapat">
         <span class="material-symbols-outlined">close</span>
       </button>
-      <h3 class="font-headline-md text-headline-md text-primary mb-4">Impressum</h3>
-      <div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+      <h3 class="font-headline-md text-xl sm:text-headline-md text-primary mb-4">Impressum</h3>
+      <div class="space-y-3 text-xs sm:text-body-sm text-on-surface-variant leading-relaxed">
         <p><strong>Angaben gemäß § 5 TMG:</strong></p>
         <p>ümmet Islamische Bestattungen<br>
         Inhaberin: Ebru Aydilek<br>
@@ -1038,14 +1380,13 @@
     </div>
   </div>
 
-  <!-- Datenschutz Modal -->
-  <div id="datenschutzModal" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm items-center justify-center p-4">
-    <div class="bg-canvas-base rounded-xl max-w-xl w-full max-h-[85vh] overflow-y-auto p-6 shadow-xl border border-border-quiet relative">
+  <div id="datenschutzModal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm items-center justify-center p-4">
+    <div class="bg-canvas-base rounded-xl max-w-xl w-full max-h-[85vh] overflow-y-auto p-6 shadow-2xl border border-border-quiet relative">
       <button type="button" onclick="closeModal('datenschutzModal')" class="absolute top-4 right-4 p-1.5 rounded-full hover:bg-surface-subtle text-text-muted" aria-label="Kapat">
         <span class="material-symbols-outlined">close</span>
       </button>
-      <h3 class="font-headline-md text-headline-md text-primary mb-4">Datenschutz</h3>
-      <div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+      <h3 class="font-headline-md text-xl sm:text-headline-md text-primary mb-4">Datenschutz</h3>
+      <div class="space-y-3 text-xs sm:text-body-sm text-on-surface-variant leading-relaxed">
         <p><strong>1. Datenschutz auf einen Blick</strong><br>
         Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
         <p><strong>2. Datenerfassung auf dieser Website</strong><br>
@@ -1058,7 +1399,7 @@
     </div>
   </div>
 
-  <!-- Script include -->
-  <script src="app.js"></script>
+  <!-- External Script with cache-busting query parameter -->
+  <script src="app.js?v=2.2"></script>
 </body>
 </html>

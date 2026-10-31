@@ -1,6 +1,7 @@
 /**
  * uemmet.de - Ümmet Cenaze Hizmetleri / Islamische Bestattungen
  * Interactive UI Engine & Language Switching System (TR / DE)
+ * Version: 2.2
  */
 
 const translations = {
@@ -14,6 +15,8 @@ const translations = {
     navReport: "Cenaze Bildirimi",
     navContact: "İletişim",
     emergencyHeader: "7/24<br>DE / TR&nbsp;",
+    mobileMenuTitle: "Menü & Dil Seçimi",
+    mobileBarCall: "7/24 Acil Çağrı",
 
     // Hero Section
     heroBadge: "İSLÂMİ CENAZE HİZMETLERİ · ALMANYA GENELİ",
@@ -158,6 +161,8 @@ const translations = {
     navReport: "Todesfall melden",
     navContact: "Kontakt",
     emergencyHeader: "24/7<br>DE / TR&nbsp;",
+    mobileMenuTitle: "Menü & Sprachauswahl",
+    mobileBarCall: "24/7 Notruf",
 
     // Hero Section
     heroBadge: "ISLAMISCHE BESTATTUNGEN · BUNDESWEIT",
@@ -306,14 +311,14 @@ function setLanguage(lang) {
     document.title = translations[lang].pageTitle;
   }
 
-  // Update active state of language buttons
+  // Update active state of language buttons with high-contrast styling
   document.querySelectorAll('.lang-btn, [data-lang-btn]').forEach(btn => {
-    const btnLang = btn.getAttribute('data-lang') || (btn.id === 'lang-btn-de' ? 'de' : 'tr');
+    const btnLang = btn.getAttribute('data-lang') || (btn.id && btn.id.includes('de') ? 'de' : 'tr');
     if (btnLang === lang) {
-      btn.className = "lang-btn px-2.5 py-1 rounded transition-all bg-canvas-base text-primary font-semibold shadow-[0_1px_4px_rgba(0,0,0,0.08)]";
+      btn.className = "lang-btn px-2.5 py-1 rounded transition-all bg-primary text-on-primary font-bold shadow-sm";
       btn.setAttribute('aria-pressed', 'true');
     } else {
-      btn.className = "lang-btn px-2.5 py-1 rounded transition-all text-text-muted hover:text-on-surface font-medium";
+      btn.className = "lang-btn px-2.5 py-1 rounded transition-all text-text-muted hover:text-primary font-medium";
       btn.setAttribute('aria-pressed', 'false');
     }
   });
@@ -326,7 +331,7 @@ function setLanguage(lang) {
     }
   });
 
-  // Update form placeholders or aria labels if any
+  // Update form placeholders if any
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
     const key = el.getAttribute('data-i18n-placeholder');
     if (translations[lang] && translations[lang][key] !== undefined) {
@@ -336,12 +341,10 @@ function setLanguage(lang) {
 
   try {
     localStorage.setItem('uemmet_lang', lang);
-  } catch (err) {
-    // localStorage might be unavailable in some sandboxes
-  }
+  } catch (err) {}
 }
 
-// Global function accessible from onclick
+// Global function accessible directly from onclick
 window.switchLanguage = function(lang) {
   setLanguage(lang);
 };
@@ -373,8 +376,8 @@ window.toggleMobileNav = function() {
   }
 };
 
+// Initialize on DOM load
 document.addEventListener('DOMContentLoaded', () => {
-  // Check URL param first, then localStorage, default to 'tr'
   const urlParams = new URLSearchParams(window.location.search);
   const paramLang = urlParams.get('lang');
   let initialLang = 'tr';
@@ -392,10 +395,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setLanguage(initialLang);
 
-  // Attach click listeners to all language buttons
+  // Attach explicit click listeners to all language buttons
   document.querySelectorAll('.lang-btn, [data-lang]').forEach(btn => {
     btn.addEventListener('click', (e) => {
-      const selectedLang = btn.getAttribute('data-lang') || (btn.id === 'lang-btn-de' ? 'de' : 'tr');
+      const selectedLang = btn.getAttribute('data-lang') || (btn.id && btn.id.includes('de') ? 'de' : 'tr');
       setLanguage(selectedLang);
     });
   });
