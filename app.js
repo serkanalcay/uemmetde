@@ -6,8 +6,8 @@
 
 const translations = {
   tr: {
-    pageTitle: "Ümmet Cenaze Hizmetleri | uemmet.de - İslami Cenaze Nakli & Bestattungen",
-    logoSubtitle: "İslami Cenaze Hizmetleri",
+    pageTitle: "Uemmet Cenaze (Ümmet Cenaze Hizmetleri) | Almanya Cenaze Nakli & İslami Defin - uemmet.de",
+    logoSubtitle: "Uemmet Cenaze · Almanya Cenaze Hizmetleri",
     navHome: "Ana Sayfa",
     navAbout: "Hakkımızda",
     navServices: "Hizmetlerimiz",
@@ -18,9 +18,9 @@ const translations = {
     mobileBarCall: "7/24 Acil Çağrı",
 
     // Hero Section
-    heroBadge: "İSLÂMİ CENAZE HİZMETLERİ · ALMANYA GENELİ",
+    heroBadge: "UEMMET CENAZE · ALMANYA İSLÂMİ CENAZE HİZMETLERİ",
     heroTitle: "Huzur ve Saygı ile Yanınızdayız",
-    heroDesc: "En zor anlarınızda yükünüzü hafifletmek için buradayız. Almanya genelinden memlekete hava yoluyla nakil ve yerel defin süreçlerini, dinimizin emrettiği şefkat, edep ve sünnet-i seniyyeye tam riayetle titizlikle yönetiyoruz.",
+    heroDesc: "Uemmet Cenaze (Ümmet Cenaze Hizmetleri) olarak en zor anlarınızda yükünüzü hafifletmek için buradayız. Almanya cenaze nakli, Türkiye'ye hava yoluyla cenaze transferi ve Almanya içi yerel İslami defin süreçlerini, dinimizin emrettiği şefkat, edep ve sünnet-i seniyyeye tam riayetle titizlikle yönetiyoruz.",
     heroCallCta: "7/24 Acil Destek Hattı (Hemen Arayın)",
     heroWhatsappCta: "WhatsApp ile İletişim",
     heroBadge1: "Resmi Konsolosluk İzinleri",
@@ -47,14 +47,14 @@ const translations = {
     pillar3Sub: "Aileye Özel Destek",
 
     // Services Section
-    servicesSub: "KAPSAMLI HİZMET ANLAYIŞI",
-    servicesTitle: "Hizmetlerimiz / Cenaze İşlemleri",
-    servicesDesc: "Ailenizin kederli gününde her aşamayı sükunet, vakar ve resmi nizam ile organize ediyoruz.",
+    servicesSub: "UEMMET CENAZE · KAPSAMLI HİZMET ANLAYIŞI",
+    servicesTitle: "Almanya Cenaze Hizmetlerimiz & Nakil İşlemleri",
+    servicesDesc: "Ailenizin kederli gününde Almanya cenaze ve nakil süreçlerinin her aşamasını sükunet, vakar ve resmi nizam ile organize ediyoruz.",
     servicesConsultBtn: "Tüm Süreçleri Danışın",
 
     service1Badge: "Hava Yolu & Kara Yolu",
-    service1Title: "Cenaze Nakil İşlemleri",
-    service1Desc: "Almanya’nın her noktasından Türkiye’ye veya dünyanın diğer ülkelerine hava yolu ile hızlı ve güvenli nakil. Çinko tabut mühürleme, gümrük muamelesi ve havaalanı teslimat koordinasyonu.",
+    service1Title: "Almanya Cenaze Nakil İşlemleri",
+    service1Desc: "Almanya’nın her noktasından Türkiye’ye veya dünyanın diğer ülkelerine hava yolu ile hızlı ve güvenli cenaze nakli. Çinko tabut mühürleme, gümrük muamelesi ve havaalanı teslimat koordinasyonu.",
     service1Item1: "THY & uluslararası kargo protokolleri",
     service1Item2: "Havalimanından memleket köyüne nakil",
     service1Item3: "Almanya içi yerel mezarlığa defin",
@@ -75,7 +75,7 @@ const translations = {
 
     // Roadmap (First 3 Steps)
     roadmapSub: "ACİL REHBER VE YOL HARİTASI",
-    roadmapTitle: "Vefat Anında Ne Yapmalı? İlk 3 Adım",
+    roadmapTitle: "Almanya'da Vefat Anında Ne Yapmalı? İlk 3 Adım",
     roadmapDesc: "Telaşa kapılmadan, huzur içerisinde atılacak adımlar konusunda ailenizi yönlendiriyoruz.",
     
     step1Badge: "İlk İşlem",
@@ -84,7 +84,7 @@ const translations = {
     step1Tip: "Totenschein belgesini saklayınız.",
 
     step2Badge: "7/24 Çağrı",
-    step2Title: "eümmet’e Ulaşılması",
+    step2Title: "Uemmet Cenaze’ye Ulaşılması",
     step2Desc: "Günün veya gecenin her saatinde <strong>+49 152 35835665</strong> numaralı hattımızı arayarak durumu bildiriniz. Uzman ekibimiz hemen yola çıkarak merhumun uygun şartlarda intikalini ve ilk muhafazayı sağlar.",
     step2CallBtn: "Hemen Arayın: +49 152 35835665",
 
@@ -97,9 +97,9 @@ const translations = {
     quoteSource: "(Hadis-i Şerif)",
 
     // Corporate & Contact
-    corpBadge: "Yetkili Cenaze Müessesesi",
-    corpTitle: "eümmet Islamische Bestattungen",
-    corpDesc: "Tuttlingen / Wurmlingen merkezli olarak tüm Baden-Württemberg ve Almanya çapında Müslüman toplumun manevi hassasiyetlerine tam bağlılıkla hizmet sunmaktayız.",
+    corpBadge: "Yetkili Almanya Cenaze Müessesesi",
+    corpTitle: "Uemmet Cenaze (eümmet Islamische Bestattungen)",
+    corpDesc: "Uemmet Cenaze (Ümmet Cenaze Hizmetleri), Tuttlingen / Wurmlingen merkezli olarak tüm Baden-Württemberg ve Almanya çapında Müslüman toplumun manevi hassasiyetlerine tam bağlılıkla 7/24 Almanya cenaze ve nakil hizmeti sunmaktadır.",
     leaderRole: "Ansprechpartnerin & Leitung / Müessese Sahibi",
     leaderName: "Ebru Aydilek",
     leaderTitle: "Resmi Temsilci & Cenaze Danışmanı",
