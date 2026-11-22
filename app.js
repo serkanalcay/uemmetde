@@ -6,8 +6,8 @@
 
 const translations = {
   tr: {
-    pageTitle: "Uemmet Cenaze (Ümmet Cenaze Hizmetleri) | Almanya Cenaze Nakli & İslami Defin - uemmet-bestattungen.de",
-    logoSubtitle: "Uemmet Cenaze · Almanya Cenaze Hizmetleri",
+    pageTitle: "Uemmet Cenaze | Almanya Cenaze, Almanya Cenaze İşleri & Stuttgart Cenaze İşleri - uemmet-bestattungen.de",
+    logoSubtitle: "Uemmet Cenaze · Almanya Cenaze İşleri",
     navHome: "Ana Sayfa",
     navAbout: "Hakkımızda",
     navServices: "Hizmetlerimiz",
@@ -18,9 +18,9 @@ const translations = {
     mobileBarCall: "7/24 Acil Çağrı",
 
     // Hero Section
-    heroBadge: "UEMMET CENAZE · ALMANYA İSLÂMİ CENAZE HİZMETLERİ",
+    heroBadge: "UEMMET CENAZE · ALMANYA CENAZE & STUTTGART CENAZE İŞLERİ",
     heroTitle: "Huzur ve Saygı ile Yanınızdayız",
-    heroDesc: "Uemmet Cenaze (Ümmet Cenaze Hizmetleri) olarak en zor anlarınızda yükünüzü hafifletmek için buradayız. Almanya cenaze nakli, Türkiye'ye hava yoluyla cenaze transferi ve Almanya içi yerel İslami defin süreçlerini, dinimizin emrettiği şefkat, edep ve sünnet-i seniyyeye tam riayetle titizlikle yönetiyoruz.",
+    heroDesc: "Uemmet Cenaze (Ümmet Cenaze Hizmetleri) olarak en zor anlarınızda yükünüzü hafifletmek için buradayız. Almanya cenaze işleri, Stuttgart cenaze işleri, Türkiye'ye hava yoluyla cenaze nakli ve yerel İslami defin süreçlerini, dinimizin emrettiği şefkat, edep ve sünnet-i seniyyeye tam riayetle titizlikle yönetiyoruz.",
     heroCallCta: "7/24 Acil Destek Hattı (Hemen Arayın)",
     heroWhatsappCta: "WhatsApp ile İletişim",
     heroBadge1: "Resmi Konsolosluk İzinleri",
@@ -47,14 +47,14 @@ const translations = {
     pillar3Sub: "Aileye Özel Destek",
 
     // Services Section
-    servicesSub: "UEMMET CENAZE · KAPSAMLI HİZMET ANLAYIŞI",
-    servicesTitle: "Almanya Cenaze Hizmetlerimiz & Nakil İşlemleri",
-    servicesDesc: "Ailenizin kederli gününde Almanya cenaze ve nakil süreçlerinin her aşamasını sükunet, vakar ve resmi nizam ile organize ediyoruz.",
+    servicesSub: "UEMMET CENAZE · ALMANYA & STUTTGART CENAZE İŞLERİ",
+    servicesTitle: "Almanya Cenaze İşleri & Stuttgart Cenaze Hizmetlerimiz",
+    servicesDesc: "Ailenizin kederli gününde Almanya cenaze işleri, Stuttgart cenaze işleri ve uluslararası nakil süreçlerinin her aşamasını sükunet, vakar ve resmi nizam ile organize ediyoruz.",
     servicesConsultBtn: "Tüm Süreçleri Danışın",
 
     service1Badge: "Hava Yolu & Kara Yolu",
     service1Title: "Almanya Cenaze Nakil İşlemleri",
-    service1Desc: "Almanya’nın her noktasından Türkiye’ye veya dünyanın diğer ülkelerine hava yolu ile hızlı ve güvenli cenaze nakli. Çinko tabut mühürleme, gümrük muamelesi ve havaalanı teslimat koordinasyonu.",
+    service1Desc: "Stuttgart, Baden-Württemberg ve Almanya’nın her noktasından Türkiye’ye veya dünyanın diğer ülkelerine hava yolu ile hızlı ve güvenli cenaze nakli. Çinko tabut mühürleme, gümrük muamelesi ve havaalanı teslimat koordinasyonu.",
     service1Item1: "THY & uluslararası kargo protokolleri",
     service1Item2: "Havalimanından memleket köyüne nakil",
     service1Item3: "Almanya içi yerel mezarlığa defin",
@@ -67,11 +67,11 @@ const translations = {
     service2Item3: "Cenaze Namazı (Janazah) organizasyonu",
 
     service3Badge: "Alman & Konsolosluk Evrakları",
-    service3Title: "Resmi & Bürokratik Süreçler",
-    service3Desc: "Vefat belgesinin (Sterbeurkunde) nüfus dairesinden (Standesamt) temini, uluslararası yol izinleri (Leichenpass), konsolosluk tescili ve sağlık müdürlüğü onaylarının eksiksiz takibi.",
+    service3Title: "Stuttgart & Almanya Resmi Cenaze İşleri",
+    service3Desc: "Vefat belgesinin (Sterbeurkunde) nüfus dairesinden (Standesamt) temini, uluslararası yol izinleri (Leichenpass), T.C. Stuttgart Başkonsolosluğu tescili ve sağlık müdürlüğü onaylarının eksiksiz takibi.",
     service3Item1: "Standesamt ve hastane yazışmaları",
-    service3Item2: "Türkiye Başkonsolosluğu işlemleri",
-    service3Item3: "Cenaze nakil fonu (Cenaze Fonu) irtibatı",
+    service3Item2: "T.C. Stuttgart Başkonsolosluğu cenaze işleri",
+    service3Item3: "Cenaze nakil fonu (DİTİB / İGMG) irtibatı",
 
     // Roadmap (First 3 Steps)
     roadmapSub: "ACİL REHBER VE YOL HARİTASI",
@@ -97,9 +97,9 @@ const translations = {
     quoteSource: "(Hadis-i Şerif)",
 
     // Corporate & Contact
-    corpBadge: "Yetkili Almanya Cenaze Müessesesi",
+    corpBadge: "Yetkili Almanya & Stuttgart Cenaze Müessesesi",
     corpTitle: "Uemmet Cenaze (eümmet Islamische Bestattungen)",
-    corpDesc: "Uemmet Cenaze (Ümmet Cenaze Hizmetleri), Tuttlingen / Wurmlingen merkezli olarak tüm Baden-Württemberg ve Almanya çapında Müslüman toplumun manevi hassasiyetlerine tam bağlılıkla 7/24 Almanya cenaze ve nakil hizmeti sunmaktadır.",
+    corpDesc: "Uemmet Cenaze (Ümmet Cenaze Hizmetleri), Stuttgart, Tuttlingen / Wurmlingen ve tüm Baden-Württemberg ile Almanya çapında Müslüman toplumun manevi hassasiyetlerine tam bağlılıkla 7/24 Almanya cenaze işleri, Stuttgart cenaze işleri ve uluslararası cenaze nakil hizmeti sunmaktadır.",
     leaderRole: "Ansprechpartnerin & Leitung / Müessese Sahibi",
     leaderName: "Ebru Aydilek",
     leaderTitle: "Resmi Temsilci & Cenaze Danışmanı",
@@ -118,9 +118,9 @@ const translations = {
     mapAirportsList: "Stuttgart · Frankfurt · Zürich",
 
     // Footer
-    footerAbout: "İslami Cenaze Hizmetleri & Uluslararası Nakil. Hayatın en ağır imtihanında sünnete uygun, şefkatli ve vakur refakat.",
+    footerAbout: "Uemmet Cenaze (Ümmet Cenaze Hizmetleri) - Almanya cenaze, Almanya cenaze işleri, Stuttgart cenaze işleri ve uluslararası cenaze nakli. Hayatın en ağır imtihanında sünnete uygun, şefkatli ve vakur refakat.",
     footerOwner: "Müessese Sahibi: Ebru Aydilek",
-    footerCoverage: "Baden-Württemberg genelinde ve tüm Almanya'da 7/24 hizmet.",
+    footerCoverage: "Stuttgart, Tuttlingen, Baden-Württemberg genelinde ve tüm Almanya'da 7/24 cenaze işleri.",
     footerColHelp: "Acil Yardım & İletişim",
     footerColRitual: "Dini Vecibeler",
     ritualItem1: "Gasil (İslami Usullere Göre Yıkama)",
