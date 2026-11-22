@@ -6,7 +6,7 @@
 
 const translations = {
   tr: {
-    pageTitle: "Uemmet Cenaze (Ümmet Cenaze Hizmetleri) | Almanya Cenaze Nakli & İslami Defin - uemmet.de",
+    pageTitle: "Uemmet Cenaze (Ümmet Cenaze Hizmetleri) | Almanya Cenaze Nakli & İslami Defin - uemmet-bestattungen.de",
     logoSubtitle: "Uemmet Cenaze · Almanya Cenaze Hizmetleri",
     navHome: "Ana Sayfa",
     navAbout: "Hakkımızda",
@@ -142,7 +142,7 @@ const translations = {
     navOnlineReport: "Online Cenaze Bildirimi"
   },
   de: {
-    pageTitle: "ümmet Islamische Bestattungen | uemmet.de - Überführungen & Bestattungsdienst",
+    pageTitle: "Uemmet Cenaze (ümmet Islamische Bestattungen) | Almanya Cenaze & Überführungen - uemmet-bestattungen.de",
     logoSubtitle: "Islamische Bestattungen",
     navHome: "Startseite",
     navAbout: "Über uns",

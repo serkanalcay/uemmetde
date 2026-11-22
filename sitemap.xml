@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://uemmet.de/</loc>
+    <loc>https://uemmet-bestattungen.de/</loc>
     <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://uemmet.de/?lang=tr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://uemmet.de/?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uemmet.de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://uemmet-bestattungen.de/?lang=tr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://uemmet-bestattungen.de/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uemmet-bestattungen.de/"/>
   </url>
   <url>
-    <loc>https://uemmet.de/rehber-ve-sss.html</loc>
+    <loc>https://uemmet-bestattungen.de/rehber-ve-sss.html</loc>
     <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://uemmet.de/cenaze-bildirimi.html</loc>
+    <loc>https://uemmet-bestattungen.de/cenaze-bildirimi.html</loc>
     <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
